@@ -274,26 +274,6 @@
                     }
                 }
             },
-            "echoStudy": {
-                "type": "forms",
-                "displayOrder": 15,
-                "dashboardConfig": {
-                    "title": null,
-                    "maximumNoOfVisits": 10
-                },
-                "formGroup": ["GHC_Echo Study Form"],
-                "translationKey": "DASHBOARD_TITLE_ECHO_STUDY_KEY"
-            },
-            "communitySurvey": {
-                "type": "forms",
-                "displayOrder": 16,
-                "dashboardConfig": {
-                    "title": null,
-                    "maximumNoOfVisits": 10
-                },
-                "formGroup": ["GHC_Community Survey Form"],
-                "translationKey": "DASHBOARD_TITLE_COMMUNITY_SURVEY"
-            },
             "Laboratory":{
                 "translationKey":"DASHBOARD_TITLE_LABORATORY_KEY",
                 "type":"vitals",
