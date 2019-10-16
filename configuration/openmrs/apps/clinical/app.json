@@ -116,39 +116,6 @@
             "Accepted Family Planning methods": {
                 "multiSelect": true
             },
-            "GHC_Reason for Visit": {
-                "multiSelect": true
-            },
-            "GHC_Actions for symptoms taken": {
-                "multiSelect": true
-            },
-            "GHC_Partner sex": {
-                "multiSelect": true
-            },
-            "GHC_Microscopy": {
-                "multiSelect": true
-            },
-            "GHC_Urine Dipstick": {
-                "multiSelect": true
-            },
-            "GHC_Vaginal Discharge Study Diagnosis": {
-                "multiSelect": true
-            },
-            "GHC_Vaginal Discharge Study Treatment": {
-                "multiSelect": true
-            },
-            "GHC_Vaginal Discharge Study Results From Lab": {
-                "multiSelect": true
-            },
-            "GHC_Types of medications currently on": {
-                "multiSelect": true
-            },
-            "GHC_EKG Interpretation": {
-                "multiSelect": true
-            },
-            "GHC_Patient enrollment reason": {
-                "multiSelect": true
-            },
             "defaults": {
                 "Number of living children": 1,
                 "Accepted Family Planning methods": [
@@ -158,33 +125,6 @@
                 "Pain management given": true,
                 "Safe Abortion, Remarks": "Remarks",
                 "Malaria, Death Date": "2015-12-01"
-            },
-            "GHC_Healthcare previously received, where": {
-                "multiSelect": true
-            },
-            "GHC_Source of water": {
-                "multiSelect": true
-            },
-            "GHC_Last medical visit location": {
-                "multiSelect": true
-            },
-            "GHC_Medical condition mentionned the past year": {
-                "multiSelect": true
-            },
-            "GHC_Type of cancer": {
-                "multiSelect": true
-            },
-            "GHC_Birth control methods used": {
-                "multiSelect": true
-            },
-            "GHC_Birth control methods used": {
-                "multiSelect": true
-            },
-            "GHC_Reasons for not using birth control": {
-                "multiSelect": true
-            },
-            "GHC_Physical Measurements": {
-                "allowAddMore": true
             }
         },
         "visitPage": {
