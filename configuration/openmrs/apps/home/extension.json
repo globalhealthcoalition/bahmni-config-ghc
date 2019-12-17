@@ -69,14 +69,14 @@
     "order": 8,
     "requiredPrivilege": "app:reports"
   },
-  "appointments": {
-    "id": "bahmni.appointments",
+  "appointmentScheduling": {
+    "id": "bahmni.appointment.scheduling",
     "extensionPointId": "org.bahmni.home.dashboard",
     "type": "link",
-    "translationKey": "MODULE_LABEL_APOOINTMENTS_KEY",
-    "url": "../../openmrs/appointmentschedulingui/home.page",
+    "translationKey": "MODULE_LABEL_APPOINTMENT_SCHEDULING_KEY",
+    "url": "../appointments",
     "icon": "fa fa-calendar",
-    "order": 11,
-    "requiredPrivilege": "App: appointmentschedulingui.home"
+    "order": 9,
+    "requiredPrivilege": "app:appointments"
   }
 }
