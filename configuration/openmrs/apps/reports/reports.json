@@ -83,8 +83,7 @@
       "countOnlyClosedVisits": "false",
       "countOncePerPatient": "false",
       "visitTypes": [
-        "OPD",
-        "IPD"
+        "Primary Care"
       ]
     }
   },
@@ -97,8 +96,7 @@
         "Diabetes, Intake"
       ],
       "visitTypes": [
-        "OPD",
-        "IPD"
+        "Primary Care"
       ]
     }
   },
