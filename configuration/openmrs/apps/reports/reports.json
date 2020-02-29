@@ -15,7 +15,7 @@
       ],
       "applyDateRangeFor": "ObsRecording",
       "addressAttributes": [
-        "city_village"
+        "address2"
       ],
       "conceptNames": [
         "Systolic",
@@ -49,7 +49,7 @@
         "Admission Status"
       ],
       "patientAddresses": [
-        "city_village"
+        "address2"
       ],
       "applyDateRangeFor": "visitStopDate",
       "visitTypesToFilter": [
@@ -114,7 +114,7 @@
         "secondaryContact"
       ],
       "patientAddresses": [
-        "city_village"
+        "address2"
       ],
       "programAttributes": [],
       "forDataAnalysis": true,
@@ -136,7 +136,7 @@
         "config": {
           "patientAttributes": [],
           "patientAddresses": [
-            "city_village"
+            "address2"
           ],
           "programAttributes": [],
           "forDataAnalysis": true,
