@@ -120,8 +120,10 @@
       "forDataAnalysis": true,
       "showAllStates": true,
       "programNamesToFilter": [
-        "Cardiovascular Study",
-        "Vaginal Discharge Study"
+        "Need for Surgery",
+        "Outside referral with specialty",
+        "Urgent follow up",
+        "Routine follow up"
       ]
     }
   },
@@ -140,8 +142,10 @@
           "forDataAnalysis": true,
           "showAllStates": true,
           "programNamesToFilter": [
-            "Cardiovascular Study",
-            "Vaginal Discharge Study"
+            "Need for Surgery",
+            "Outside referral with specialty",
+            "Urgent follow up",
+            "Routine follow up"
           ]
         }
       },
