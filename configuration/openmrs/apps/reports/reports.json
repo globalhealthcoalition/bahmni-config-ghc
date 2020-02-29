@@ -53,8 +53,7 @@
       ],
       "applyDateRangeFor": "visitStopDate",
       "visitTypesToFilter": [
-        "PHARMACY VISIT",
-        "OPD"
+        "Primary Care"
       ]
     }
   },
