@@ -67,8 +67,7 @@
       ],
       "countOnlyClosedVisits": "false",
       "visitTypes": [
-        "IPD",
-        "OPD"
+        "Primary Care"
       ]
     }
   },
