@@ -105,7 +105,7 @@
             "searchHandler": "emrapi.sqlSearch.drugOrderPatients",
             "translationKey": "MODULE_LABEL_DRUGORDERS_KEY",
             "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard/treatment",
-	     "view": "tabular"	
+	     "view": "tabular"
         },
         "label": "DrugOrders",
         "order": 5,
@@ -169,6 +169,17 @@
     },
     "order": 4,
     "requiredPrivilege": "app:clinical"
+  },
+  "bahmniClinicalConceptSetGroupObservationsIntake": {
+  "id": "bahmni.clinical.conceptSetGroup.observations.checkout",
+  "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+  "type": "config",
+  "extensionParams": {
+    "default": true,
+    "conceptName": "Check out"
+  },
+  "order":5,
+  "requiredPrivilege": "app:clinical"
   },
     "bahmniClinicalConceptSetGroupObservationsCardioStudy": {
     "id": "bahmni.clinical.conceptSetGroup.observations.cardiostudy",

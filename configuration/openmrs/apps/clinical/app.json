@@ -116,6 +116,10 @@
             "Accepted Family Planning methods": {
                 "multiSelect": true
             },
+            "Patient Satisfaction Score":
+            {
+              "dropdown": true
+            },
             "defaults": {
                 "Number of living children": 1,
                 "Accepted Family Planning methods": [
