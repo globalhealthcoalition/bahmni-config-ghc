@@ -170,7 +170,7 @@
     "order": 4,
     "requiredPrivilege": "app:clinical"
   },
-  "bahmniClinicalConceptSetGroupObservationsIntake": {
+  "bahmniClinicalConceptSetGroupObservationsCheckout": {
   "id": "bahmni.clinical.conceptSetGroup.observations.checkout",
   "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
   "type": "config",
@@ -180,61 +180,6 @@
   },
   "order":5,
   "requiredPrivilege": "app:clinical"
-  },
-    "bahmniClinicalConceptSetGroupObservationsCardioStudy": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.cardiostudy",
-    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-    "type": "config",
-    "extensionParams": {
-      "conceptName": "Cardiovascular Studies",
-      "default": true
-    },
-    "order": 5,
-    "requiredPrivilege": "app:clinical"
-  },
-    "bahmniClinicalConceptSetGroupObservationsCardioStudy": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.cardiostudy",
-    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-    "type": "config",
-    "extensionParams": {
-      "conceptName": "Cardiovascular Studies",
-      "default": true
-    },
-    "order": 6,
-    "requiredPrivilege": "app:clinical"
-  },
-    "bahmniClinicalConceptSetGroupObservationsVaginalDischargeStudy": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.vaginaldischargestudy",
-    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-    "type": "config",
-    "extensionParams": {
-      "conceptName": "GHC_Vaginal Discharge Study Form",
-      "default": true
-    },
-    "order": 7,
-    "requiredPrivilege": "app:clinical"
-  },
-    "bahmniClinicalConceptSetGroupObservationsEchoStudy": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.echostudy",
-    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-    "type": "config",
-    "extensionParams": {
-      "conceptName": "GHC_Echo Study Form",
-      "default": true
-    },
-    "order": 8,
-    "requiredPrivilege": "app:clinical"
-  },
-    "bahmniClinicalConceptSetGroupObservationsCommunitySurvey": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.communitysurvey",
-    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-    "type": "config",
-    "extensionParams": {
-      "conceptName": "GHC_Community Survey Form",
-      "default": true
-    },
-    "order": 9,
-    "requiredPrivilege": "app:clinical"
   },
   "bahmniClinicalConceptSetGroupObservationsSecondVitals": {
     "id": "bahmni.clinical.conceptSetGroup.observations.secondVitals",
