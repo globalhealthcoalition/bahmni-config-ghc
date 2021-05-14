@@ -121,6 +121,24 @@
                     "showDetailsButton":true
                 }
             },
+            "labResults": {
+                "translationKey": "DASHBOARD_TITLE_LAB_RESULTS_KEY",
+                "type": "labOrders",
+                "displayOrder": 10,
+                "dashboardConfig": {
+                    "title": null,
+                    "numberOfVisits": 6,
+                    "showChart": false,
+                    "showTable": true,
+                    "showNormalLabResults": true,
+                    "showCommentsExpanded": true,
+                    "showAccessionNotes": true,
+                    "showDetailsButton": false
+                },
+                "expandedViewConfig": {
+                    "numberOfVisits": 10
+                }
+            },
             "bacteriologyResults":{
                 "translationKey":"DASHBOARD_TITLE_BACTERIOLOGY_RESULTS_KEY",
                 "type":"bacteriologyResultsControl",

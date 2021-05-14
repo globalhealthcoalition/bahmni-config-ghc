@@ -2,6 +2,7 @@
   "Diagnosis": {
     "name": "Coded and Non-coded Diagnoses Entered",
     "type": "MRSGeneric",
+    "requiredPrivilege": "app:reports",
     "config": {
       "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/diagnosis.sql"
     }
@@ -9,6 +10,7 @@
   "obsCannedReport": {
     "name": "Patient Characteristics",
     "type": "obsCannedReport",
+    "requiredPrivilege": "app:reports",
     "config": {
       "patientAttributes": [
         "occupation"
@@ -37,6 +39,7 @@
   "visitReport10": {
     "name": "Visit Report",
     "type": "visits",
+    "requiredPrivilege": "app:reports",
     "config": {
       "forDataAnalysis": true,
       "patientAttributes": [
@@ -60,6 +63,7 @@
   "chiefComplaintReport": {
     "name": "Chief Complaint Report",
     "type": "obsCount",
+    "requiredPrivilege": "app:reports",
     "config": {
       "ageGroupName": "All Ages",
       "conceptNames": [
@@ -74,6 +78,7 @@
   "bloodPressure": {
     "name": "Blood Pressure",
     "type": "obsCount",
+    "requiredPrivilege": "app:reports",
     "config": {
       "ageGroupName": "All Ages",
       "conceptNames": [
@@ -90,6 +95,7 @@
   "diabetes": {
     "name": "Diabetes",
     "type": "obsCount",
+    "requiredPrivilege": "app:reports",
     "config": {
       "ageGroupName": "All Ages",
       "conceptNames": [
@@ -102,11 +108,13 @@
   },
   "patientReport": {
     "name": "Patient Information",
+    "requiredPrivilege": "app:reports",
     "type": "PatientReport"
   },
   "SampleGenericProgramReport": {
     "name": "Program Report",
     "type": "programs",
+    "requiredPrivilege": "app:reports",
     "config": {
       "patientAttributes": [
         "education",
@@ -130,6 +138,7 @@
   "pivotReportForPrograms": {
     "name": "Program Pivot Report",
     "type": "aggregation",
+    "requiredPrivilege": "app:reports",
     "config": {
       "report": {
         "type": "programs",
