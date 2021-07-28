@@ -22,7 +22,7 @@
       "showObsOnlyForProgramDuration": false
     }
   },
-  "visitReport10": {
+  "visitReport": {
     "name": "Visit Report",
     "type": "visits",
     "requiredPrivilege": "app:reports",
@@ -59,7 +59,24 @@
   },
   "bloodPressure": {
     "name": "Blood Pressure",
-    "type": "aggregation",
+    "type": "obsCount",
+    "requiredPrivilege": "app:reports",
+    "config": {
+      "ageGroupName": "All Ages",
+      "conceptNames": [
+        "Systolic",
+        "Diastolic"
+      ],
+      "countOnlyClosedVisits": "false",
+      "countOncePerPatient": "false",
+      "visitTypes": [
+        "Primary Care"
+      ]
+    }
+  },
+  "diabetes": {
+    "name": "Diabetes",
+    "type": "obsCount",
     "requiredPrivilege": "app:reports",
     "config": {
       "report": {
