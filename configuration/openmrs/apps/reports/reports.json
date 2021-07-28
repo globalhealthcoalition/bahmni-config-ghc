@@ -1,24 +1,12 @@
 {
-  "Diagnosis": {
-    "name": "Coded and Non-coded Diagnoses Entered",
-    "type": "MRSGeneric",
-    "requiredPrivilege": "app:reports",
-    "config": {
-      "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/diagnosis.sql"
-    }
-  },
   "obsCannedReport": {
     "name": "Patient Characteristics",
     "type": "obsCannedReport",
     "requiredPrivilege": "app:reports",
     "config": {
-      "patientAttributes": [
-        "occupation"
-      ],
+      "patientAttributes": ["occupation"],
       "applyDateRangeFor": "ObsRecording",
-      "addressAttributes": [
-        "address2"
-      ],
+      "addressAttributes": ["address2"],
       "conceptNames": [
         "Systolic",
         "Diastolic",
@@ -30,49 +18,43 @@
         "BMI STATUS",
         "WEIGHT"
       ],
-      "visitIndependentConcept": [
-        "HEIGHT"
-      ],
+      "visitIndependentConcept": ["HEIGHT"],
       "showObsOnlyForProgramDuration": false
     }
   },
-  "visitReport10": {
+  "visitReport": {
     "name": "Visit Report",
     "type": "visits",
     "requiredPrivilege": "app:reports",
     "config": {
       "forDataAnalysis": true,
-      "patientAttributes": [
-        "education",
-        "occupation",
-        "primaryContact"
-      ],
-      "visitAttributes": [
-        "Visit Status",
-        "Admission Status"
-      ],
-      "patientAddresses": [
-        "address2"
-      ],
+      "patientAttributes": ["education", "occupation", "primaryContact"],
+      "visitAttributes": ["Visit Status", "Admission Status"],
+      "patientAddresses": ["address2"],
       "applyDateRangeFor": "visitStopDate",
-      "visitTypesToFilter": [
-        "Primary Care"
-      ]
+      "visitTypesToFilter": ["Primary Care"]
     }
   },
   "chiefComplaintReport": {
     "name": "Chief Complaint Report",
-    "type": "obsCount",
+    "type": "aggregation",
     "requiredPrivilege": "app:reports",
     "config": {
-      "ageGroupName": "All Ages",
-      "conceptNames": [
-        "Chief Complaint"
-      ],
-      "countOnlyClosedVisits": "false",
-      "visitTypes": [
-        "Primary Care"
-      ]
+      "report": {
+        "type": "observations",
+        "config": {
+          "conceptNamesToFilter": ["Chief Complaint"],
+          "showVisitInfo": true,
+          "forDataAnalysis": true,
+          "visitAttributes": ["Visit Status", "Admission Status"],
+          "visitTypesToFilter": ["Primary Care"]
+        }
+      },
+      "rowGroups": ["Gender"],
+      "columnGroups": ["Concept Name"],
+      "distinctGroups": ["Patient Identifier"],
+      "showTotalRow": true,
+      "showTotalColumn": true
     }
   },
   "bloodPressure": {
@@ -97,33 +79,35 @@
     "type": "obsCount",
     "requiredPrivilege": "app:reports",
     "config": {
-      "ageGroupName": "All Ages",
-      "conceptNames": [
-        "Diabetes, Intake"
-      ],
-      "visitTypes": [
-        "Primary Care"
-      ]
+      "report": {
+        "type": "observations",
+        "config": {
+          "conceptNamesToFilter": ["Diastolic", "Systolic"],
+          "showVisitInfo": true,
+          "forDataAnalysis": true,
+          "visitAttributes": ["Visit Status", "Admission Status"],
+          "visitTypesToFilter": ["Primary Care"]
+        }
+      },
+      "rowGroups": ["Gender"],
+      "columnGroups": ["Concept Name"],
+      "distinctGroups": ["Patient Identifier"],
+      "showTotalRow": true,
+      "showTotalColumn": true
     }
   },
   "patientReport": {
     "name": "Patient Information",
-    "requiredPrivilege": "app:reports",
-    "type": "PatientReport"
+    "type": "PatientReport",
+    "requiredPrivilege": "app:reports"
   },
   "SampleGenericProgramReport": {
     "name": "Program Report",
     "type": "programs",
     "requiredPrivilege": "app:reports",
     "config": {
-      "patientAttributes": [
-        "education",
-        "primaryContact",
-        "secondaryContact"
-      ],
-      "patientAddresses": [
-        "address2"
-      ],
+      "patientAttributes": ["education", "primaryContact", "secondaryContact"],
+      "patientAddresses": ["address2"],
       "programAttributes": [],
       "forDataAnalysis": true,
       "showAllStates": true,
@@ -144,9 +128,7 @@
         "type": "programs",
         "config": {
           "patientAttributes": [],
-          "patientAddresses": [
-            "address2"
-          ],
+          "patientAddresses": ["address2"],
           "programAttributes": [],
           "forDataAnalysis": true,
           "showAllStates": true,
@@ -158,15 +140,9 @@
           ]
         }
       },
-      "columnGroups": [
-        "Program name"
-      ],
-      "rowGroups": [
-        "Gender"
-      ],
-      "distinctGroups": [
-        "Patient Identifier"
-      ],
+      "columnGroups": ["Program name"],
+      "rowGroups": ["Gender"],
+      "distinctGroups": ["Patient Identifier"],
       "showTotalRow": true,
       "showTotalColumn": true
     }
