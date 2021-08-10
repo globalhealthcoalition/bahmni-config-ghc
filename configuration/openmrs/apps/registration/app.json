@@ -80,7 +80,7 @@
                 "customAttributes": {
                     "label": "Phone Number/ID",
                     "placeholder": "Enter Phone Number/ID", 
-                    "fields": ["primaryContact","secondaryContact","legacyID"]
+                    "fields": ["primaryContact","secondaryContact","thirdContact","legacyID"]
                 }
             }
         }

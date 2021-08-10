@@ -10,13 +10,13 @@
   "REGISTRATION_AGE_ERROR_KEY":"Age should be a positive value",
   "REGISTRATION_TELEPHONE_NUMBER_ERROR_KEY":"Telephone Number should have minimum 8 digits",
   "REGISTRATION_CASTE_TEXT_ERROR_KEY":"Caste should contain only alphanumeric characters",
-  "REGISTRATION_BRING_CARD_TEXT_KEY":"It is quite important to bring the card to the hospital.",
+  "REGISTRATION_BRING_CARD_TEXT_KEY":"Para un mejor servicio, favor de conservar y guardar esta carta y asegurarse de traerla a su próxima visita. La misma facilita el proceso para encontrar su historial electrónico.",
   "REGISTRATION_TAKE_MEDICINES_TEXT_KEY": "Take medicines according to instructions of the doctor.",
   "REGISTRATION_TIMINGS_TEXT_KEY":"",
   "REGISTRATION_OPD_DAYS_TEXT_KEY" : "",
   "REGISTRATION_SUNDAYS_HOLIDAY_TEXT_KEY": "",
-  "REGISTRATION_SMOKING_INJURIOUS_TEXT_KEY" : "Smoking, Tobacco chewing can cause cancer, heart diseases and asthma.",
-  "REGISTRATION_INSTITUTE_NAME_TEXT_KEY": "Community Empowerment Jerusalem Clinic",
+  "REGISTRATION_SMOKING_INJURIOUS_TEXT_KEY" : "Evite el uso de tabaco: Fumar es perjudicial para la salud.",
+  "REGISTRATION_INSTITUTE_NAME_TEXT_KEY": "One World Surgery",
   "REGISTRATION_INSTITUTE_REGISTERED_TEXT_KEY": "(Registered)",
   "REGISTRATION_INSTITUTE_ADDRESS": "Jerusalem Village",
   "FEE_INFORMATION_LOCALE_KEY": "Fee Information",
@@ -25,5 +25,5 @@
   "Location.country": "Country",
   "Location.stateProvince": "Province",
   "Location.address1": "Municipality",
-  "Location.address2": "Neighborhood"
+  "Location.address2": "Address"
 }
