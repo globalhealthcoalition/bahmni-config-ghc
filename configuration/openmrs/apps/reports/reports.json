@@ -113,9 +113,13 @@
       "showAllStates": true,
       "programNamesToFilter": [
         "Need for Surgery",
-        "Outside referral with specialty",
         "Urgent follow up",
-        "Routine follow up"
+        "Physical Therapy",
+        "Cita Abierta",
+        "Pre-operative clearance",
+        "Consults",
+        "Primary Care",
+        "Social work"
       ]
     }
   },
@@ -134,9 +138,13 @@
           "showAllStates": true,
           "programNamesToFilter": [
             "Need for Surgery",
-            "Outside referral with specialty",
             "Urgent follow up",
-            "Routine follow up"
+            "Physical Therapy",
+            "Cita Abierta",
+            "Pre-operative clearance",
+            "Consults",
+            "Primary Care",
+            "Social work"
           ]
         }
       },
