@@ -25,5 +25,5 @@
   "Location.country": "Country",
   "Location.stateProvince": "Province",
   "Location.address1": "Municipality",
-  "Location.address2": "Neighborhood"
+  "Location.address2": "Address"
 }
