@@ -113,10 +113,7 @@
       "showAllStates": true,
       "programNamesToFilter": [
         "Need for Surgery",
-        "Outside referral with specialty",
-        "Urgent follow up",
-        "Routine follow up"
-      ]
+        "Urgent follow up"]
     }
   },
   "pivotReportForPrograms": {
@@ -134,10 +131,7 @@
           "showAllStates": true,
           "programNamesToFilter": [
             "Need for Surgery",
-            "Outside referral with specialty",
-            "Urgent follow up",
-            "Routine follow up"
-          ]
+            "Urgent follow up"]
         }
       },
       "columnGroups": ["Program name"],
