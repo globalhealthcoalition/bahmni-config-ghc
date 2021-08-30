@@ -7,10 +7,10 @@
   "REGISTRATION_PRINT_REG_CARD_LOCAL_KEY" : "Imprimir Carta Regular (<u>L</u>ocal)",
   "REGISTRATION_PRINT_REG_CARD_KEY":"<u>I</u>mprimir Carta de Registro",
   "REGISTRATION_PRINT_SUPPLEMENTAL_PAPER":"I<u>m</u>primir Documento Suplementario",
-  "REGISTRATION_AGE_ERROR_KEY":"La edad debe ser un valor positivo",
+  "REGISTRATION_AGE_ERROR_KEY":"la edad deberia ser un valor positivo",
   "REGISTRATION_TELEPHONE_NUMBER_ERROR_KEY":"El número de teléfono debe tener al menos 6 dígitos",
   "REGISTRATION_CASTE_TEXT_ERROR_KEY":"La casta debería contener únicamente caracteres alfanuméricos",
-  "REGISTRATION_BRING_CARD_TEXT_KEY":"Para un mejor servicio, favor de conservar y guardar esta carta y asegurarse de traerla a su próxima visita. La misma facilita el proceso para encontrar su historial electrónico.",
+  "REGISTRATION_BRING_CARD_TEXT_KEY":"Es importante traer las carta consigo al hospital",
   "REGISTRATION_TAKE_MEDICINES_TEXT_KEY": "Tome las medicinas de acuerdo a las instrucciones del doctor.",
   "REGISTRATION_TIMINGS_TEXT_KEY":"Las horas de registro son de 8:30 am a 12:00 pm",
   "REGISTRATION_OPD_DAYS_TEXT_KEY" : "Los días OPD son  el lunes, miércoles y viernes.",
@@ -19,7 +19,11 @@
   "REGISTRATION_INSTITUTE_NAME_TEXT_KEY": "Jan Swasthya Sahyog",
   "REGISTRATION_INSTITUTE_REGISTERED_TEXT_KEY": "(Registrado)",
   "REGISTRATION_INSTITUTE_ADDRESS": "Ganiyari, Distrito- Bilaspur",
-  "FEE_INFORMATION_LOCALE_KEY": "Información de Tarifa.",
+  "FEE_INFORMATION_LOCALE_KEY": "Información de pagos",
   "NUTRITIONAL_VALUES_LOCALE_KEY": "Valores Nutricionales",
-  "REGISTRATION_PRINT_WITH_BARCODE": "Impreso de <u>c</u>ódigo de barra"
+  "REGISTRATION_PRINT_WITH_BARCODE": "Impreso de <u>c</u>ódigo de barra",
+  "Location.country": "País ",
+  "Location.stateProvince": "Provincia",
+  "Location.address1": "Municipalidad",
+  "Location.address2": "Direccion"
 }

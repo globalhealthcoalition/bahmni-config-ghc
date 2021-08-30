@@ -3,5 +3,17 @@
   "MODULE_LABEL_ACTIVE_PATIENTS_KEY":"Pacientes Activos",
 
   "SEARCH_NAME_PLACEHOLDER_KEY": "Buscar Nombre/ID ...",
-  "SEARCH_KEY": "Buscar"
+  "SEARCH_KEY": "Buscar",
+  "NEW_VISIT_LABEL": "Nuevo",
+  "VISIT_TYPE_LABEL": "Tipo de visita",
+  "START_DATE_LABEL": "fecha de inicio",
+  "END_DATE_LABEL": "fecha de finalización ",
+  "VISIT_LABEL": "Visita",
+  "SCAN_LABEL": "Escanner",
+  "SAVE_LABEL": "Guardar",
+  "VISIT_FROM_LABEL": "Desde",
+  "YEARS_LABEL": "Años",
+  "VISIT_EXIST_LABEL": "There is already a visit that exists within the entered dates. Please upload documents against appropriate visit.",
+  "START_NOT_GREATER_THAN_END_DATE_LABEL": "Visit date should not be in the future."
+
 }

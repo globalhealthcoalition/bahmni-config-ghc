@@ -1,13 +1,16 @@
 {
+  "MODULE_LABEL_TODAY_QUEUE_KEY": "Hoy",
   "MODULE_LABEL_ACTIVE_KEY": "Activo",
   "MODULE_LABEL_PROGRAMS_KEY": "Programas",
   "MODULE_LABEL_MY_PATIENTS_KEY": "Mis Pacientes",
   "MODULE_LABEL_ACTIVE_PATIENTS_BY_LOCATION": "PacientesPorUbicacion",
   "MODULE_LABEL_OPD_1_KEY": "OPD-1",
   "MODULE_LABEL_ALL_KEY": "Todos",
-
+  "MODULE_LABEL_DRUGORDERS_KEY": "Ordenes de farmacos",
+  "MODULE_LABEL_DRUGDISPENSED_KEY": "Farmacos dispensados",
+  
   "DASHBOARD_TITLE_LAB_RESULTS_KEY": "Resultados de Laboratorio",
-  "DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY": "Cumpliemiento de órdenes de Laboratorio",
+  "DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY": "Ordenes de laboratorio",
   "DASHBOARD_TITLE_PACS_KEY": "Pacs",
   "DASHBOARD_TITLE_RADIOLOGY_KEY": "Radiología",
   "DASHBOARD_TITLE_VISITS_KEY": "Visitas",
@@ -28,11 +31,32 @@
   "DASHBOARD_TITLE_BACTERIOLOGY_RESULTS_KEY":"Resultados de Bacteriología",
   "DASHBOARD_TITLE_FORMS_DISPLAY_CONTROL_KEY":"Formularios",
   "DASHBOARD_TITLE_GROWTH_CHART": "Tabla de crecimiento",
-  "DASHBOARD_TITLE_BLOOD_PRESSURE": "PA",
+  "DASHBOARD_TITLE_BLOOD_PRESSURE": "Presion Arterial",
   "DASHBOARD_TITLE_WEIGHT_BMI": "Peso/índice de masa corporal",
-  "DASHBOARD_TITLE_DIABETES_BLOOD_SUGAR": "Diabetes/Azúcar sangre",
+  "DASHBOARD_TITLE_DIABETES_BLOOD_SUGAR": "Diabetes/Nivel de azucar en sangre",
   "DASHBOARD_TITLE_PULSE": "Pulso",
+  "DASHBOARD_TITLE_VACCINATION_HISTORY_KEY": "Vacunación",
+  "DASHBOARD_TITLE_LABORATORY_KEY": "Laboratorio",
+  "SELECTED_ORDERS_LABEL": "Ordenes seleccionadas",
+  "SELECTED_ORDERS_EMPTY_MESSAGE": "Selected Orders is empty",
+  "MEDICATION_NEW_PRESCRIPTION": "Change Duration",
+  "MEDICATION_STARTED_ON": "Started on",
+  "MEDICATION_STOP": "Stop",
+  "MEDICATION_REFILL": "Refill",
+  "DOB_LABEL": "Fecha de nacimiento",
+  "OBSERVATION_GRAPH_NO_DATA_LABEL": "No hay datos",
+  "DASHBOARD_TITLE_HEAD_CIRCUMFERENCE_AGE_0_36_KEY": "Crecimiento de circunferencia de la cabeza",
+  "DASHBOARD_TITLE_HEIGHT_AGE_0_36_KEY": "Crecimiento de altura 0-36 meses",
+  "DASHBOARD_TITLE_HEIGHT_AGE_2_20_KEY": "Crecimiento de altura  2-20 anos",
+  "DASHBOARD_TITLE_WEIGHT_AGE_0_36_KEY": "Crecimiento de peso 0-36 meses",
+  "DASHBOARD_TITLE_WEIGHT_AGE_2_20_KEY": "Crecimento de peso 2-20 anos",
+  "EDIT_LABEL": "Editar",
+  "DELETE_LABEL": "Eliminar",
+  "NO_FULFILMENT_MESSAGE": "no se encuentran observaciones para esta orden",
   
+  "CHOOSE_REPORT_FORMAT": "Elija el formato de su preferencia",
+
+
   "DASHBOARD_TAB_GENERAL_KEY": "General",
   "DASHBOARD_TAB_TRENDS_KEY": "Tendencias",
   "DASHBOARD_TAB_PATIENT_SUMMARY_KEY": "Resumen del paciente",
@@ -44,11 +68,11 @@
 
   "DISCHARGE_SUMMARY_DIAGNOSIS_KEY" :"Diagnóstico",
 
-  "DISCHARGE_SUMMARY_ADVICE_ON_DISCHARGE_KEY": "Consejos para el alta",
+  "DISCHARGE_SUMMARY_ADVICE_ON_DISCHARGE_KEY": "Orden del alta",
   "DISCHARGE_SUMMARY_AT_ADMISSION_KEY": "En admisión",
   "DISCHARGE_SUMMARY_ADMISSION_DETAILS_KEY": "Detalles de admisión",
   "DISCHARGE_SUMMARY_CLINICAL_NOTES_KEY": "Notas Clínicas",
-  "DISCHARGE_SUMMARY_AT_DISCHARGE_KEY": "En Alta",
+  "DISCHARGE_SUMMARY_AT_DISCHARGE_KEY": "De alta",
   "DISCHARGE_SUMMARY_TREATMENTS_KEY": "Tratamientos",
 
 
@@ -60,8 +84,8 @@
   "DISPOSITION_BOARD_LABEL_KEY":"Disposición",
   "DIAGNOSIS_BOARD_LABEL_KEY":"Diagnóstico",
 
-  "CLINICAL_ORDER_RADIOLOGY_NEED_PRINT": "Necesita impresora para esta orden",
-  "CLINICAL_ORDER_RADIOLOGY_NEED_PRINT_BUTTON": "Necesita impresora",
+  "CLINICAL_ORDER_RADIOLOGY_NEED_PRINT": "Se necesita impresión para esta orden",
+  "CLINICAL_ORDER_RADIOLOGY_NEED_PRINT_BUTTON": "Necesita impresión ",
 
   "CONSULTATION_PAGE_KEY" :"Consulta",
   "PROGRAM_MANAGEMENT_PAGE_KEY":"Página de administración del programa",
@@ -74,15 +98,15 @@
   "DASHBOARD_TITLE_Consultation_KEY": "Notas de la consulta",
 
   "DASHBOARD_TITLE_APPOINTMENTS_KEY": "Cita",
-  "DASHBOARD_APPOINTMENTS_SLOT_KEY": "Ranura",
+  "DASHBOARD_APPOINTMENTS_SLOT_KEY": "Cupo",
   "DASHBOARD_APPOINTMENTS_SERVICE_KEY": "Servicio",
   "DASHBOARD_APPOINTMENTS_SERVICE_TYPE_KEY": "Tipo de cita de servicio",
   "DASHBOARD_APPOINTMENTS_DATE_KEY": "Fecha",
   "DASHBOARD_APPOINTMENTS_PROVIDER_KEY": "Proveedor",
   "DASHBOARD_APPOINTMENTS_STATUS_KEY": "Estados",
   "DASHBOARD_PAST_APPOINTMENTS_KEY": "Citas pasadas",
-  "DASHBOARD_UPCOMING_APPOINTMENTS_KEY": "Citas futuras",
+  "DASHBOARD_UPCOMING_APPOINTMENTS_KEY": "Proximas Citas",
   "DASHBOARD_UPCOMING_APPOINTMENTS_KEY_LINK": "Vista de listado",
   "DASHBOARD_NO_PAST_APPOINTMENTS_KEY": "Sin citas pasadas",
-  "DASHBOARD_NO_UPCOMING_APPOINTMENTS_KEY": "SIn citas futuras"
+  "DASHBOARD_NO_UPCOMING_APPOINTMENTS_KEY": "Sin citas futuras"
 }
