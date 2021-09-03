@@ -1,6 +1,6 @@
 {
   "Diagnosis": {
-    "name": "Coded and Non-coded Diagnoses Entered",
+    "name": "Coded Diagnoses Entered",
     "type": "MRSGeneric",
     "requiredPrivilege": "app:reports",
     "config": {
@@ -19,12 +19,12 @@
         "Systolic",
         "Diastolic",
         "Pulse",
-        "RR",
-        "SPO2",
+        "Respiratory Rate",
+        "Oxygen Saturation",
         "Smoking History",
         "BMI",
         "BMI STATUS",
-        "WEIGHT"
+        "Weight"
       ],
       "visitIndependentConcept": ["HEIGHT"],
       "showObsOnlyForProgramDuration": false
@@ -67,19 +67,22 @@
   },
   "bloodPressure": {
     "name": "Blood Pressure",
-    "type": "obsCount",
+    "type": "aggregation",
     "requiredPrivilege": "app:reports",
     "config": {
-      "ageGroupName": "All Ages",
-      "conceptNames": [
-        "Systolic",
-        "Diastolic"
-      ],
-      "countOnlyClosedVisits": "false",
-      "countOncePerPatient": "false",
-      "visitTypes": [
-        "Primary Care"
-      ]
+      "report": {
+        "type": "observations",
+        "config": {
+          "conceptNamesToFilter": ["Systolic", "Diastolic"],
+          "showVisitInfo": true,
+          "forDataAnalysis": true,
+          "visitAttributes": ["Visit Status", "Admission Status"],
+          "visitTypesToFilter": ["Primary Care"]
+        }
+      },
+      "rowGroups": ["Gender"],
+      "columnGroups": ["Concept Name"],
+      "distinctGroups": ["Patient Identifier"]
     }
   },
   "diabetes": {
@@ -119,9 +122,7 @@
       "programAttributes": [],
       "forDataAnalysis": true,
       "showAllStates": true,
-      "programNamesToFilter": [
-        "Need for Surgery",
-        "Urgent follow up"]
+      "programNamesToFilter": ["Need for Surgery", "Urgent follow up"]
     }
   },
   "pivotReportForPrograms": {
@@ -137,9 +138,7 @@
           "programAttributes": [],
           "forDataAnalysis": true,
           "showAllStates": true,
-          "programNamesToFilter": [
-            "Need for Surgery",
-            "Urgent follow up"]
+          "programNamesToFilter": ["Need for Surgery", "Urgent follow up"]
         }
       },
       "columnGroups": ["Program name"],
