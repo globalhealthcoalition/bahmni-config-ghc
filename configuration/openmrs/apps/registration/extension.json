@@ -37,7 +37,7 @@
         "type": "forms",
         "extensionParams": {
             "formName": "Fee Information",
-            "conceptNames": ["REGISTRATION FEES","COMMENTS"],
+            "conceptNames": ["Registration Fee","Comments"],
             "required":true,
             "showLatest": true
         },
