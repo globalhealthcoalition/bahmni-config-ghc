@@ -26,7 +26,7 @@
         "BMI STATUS",
         "Weight"
       ],
-      "visitIndependentConcept": ["HEIGHT"],
+      "visitIndependentConcept": ["Height"],
       "showObsOnlyForProgramDuration": false
     }
   },
@@ -83,28 +83,6 @@
       "rowGroups": ["Gender"],
       "columnGroups": ["Concept Name"],
       "distinctGroups": ["Patient Identifier"]
-    }
-  },
-  "diabetes": {
-    "name": "Diabetes",
-    "type": "obsCount",
-    "requiredPrivilege": "app:reports",
-    "config": {
-      "report": {
-        "type": "observations",
-        "config": {
-          "conceptNamesToFilter": ["Diastolic", "Systolic"],
-          "showVisitInfo": true,
-          "forDataAnalysis": true,
-          "visitAttributes": ["Visit Status", "Admission Status"],
-          "visitTypesToFilter": ["Primary Care"]
-        }
-      },
-      "rowGroups": ["Gender"],
-      "columnGroups": ["Concept Name"],
-      "distinctGroups": ["Patient Identifier"],
-      "showTotalRow": true,
-      "showTotalColumn": true
     }
   },
   "patientReport": {
