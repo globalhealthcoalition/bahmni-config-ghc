@@ -34,13 +34,14 @@
     "feeInformation":{
         "id": "bahmni.registration.conceptSetGroup.feeInformation",
         "extensionPointId": "org.bahmni.registration.conceptSetGroup.observations",
-        "type": "config",
+        "type": "forms",
         "extensionParams": {
-            "conceptName": "Fee Information",
-            "translationKey": "FEE_INFORMATION_LOCALE_KEY",
-            "required":true
+            "formName": "Fee Information",
+            "conceptNames": ["REGISTRATION FEES","COMMENTS"],
+            "required":true,
+            "showLatest": true
         },
-        "order": 2,
+        "order": 1,
         "requiredPrivilege": "Edit Visits"
     }
 }

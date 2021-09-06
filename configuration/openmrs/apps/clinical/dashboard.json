@@ -481,8 +481,8 @@
                 "title":"BP",
                 "config":{
                     "yAxisConcepts":[
-                        "Systolic Data",
-                        "Diastolic Data"
+                        "Systolic",
+                        "Diastolic"
                     ],
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":10
@@ -507,7 +507,7 @@
                 "title":"Pulse",
                 "config":{
                     "yAxisConcepts":[
-                        "Pulse Data"
+                        "Pulse"
                     ],
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":10
