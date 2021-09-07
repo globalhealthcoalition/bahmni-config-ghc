@@ -136,5 +136,27 @@
                 "conceptNames": []
             }
         }
+    },
+    "config" : {
+        "program": {
+            "Goldman Score" : {
+                "excludeFrom" : ["Need for Surgery", "Urgent follow up", "Physical Therapy", "Cita Abierta", "Consults", "Primary Care", "Social work"]
+            },
+            "Consults Service" : {
+                "excludeFrom" : ["Need for Surgery", "Urgent follow up", "Physical Therapy", "Cita Abierta", "Pre-operative clearance", "Primary Care", "Social work"]
+            },
+            "Primary Care Service" : {
+                "excludeFrom" : ["Need for Surgery", "Urgent follow up", "Physical Therapy", "Cita Abierta", "Pre-operative clearance", "Consults", "Social work"]
+            },
+            "Priority 1" : {
+                "excludeFrom" : ["Primary Care", "Urgent follow up", "Physical Therapy", "Cita Abierta", "Pre-operative clearance", "Consults", "Social work"]
+            },
+            "Priority 2" : {
+                "excludeFrom" : ["Primary Care", "Urgent follow up", "Physical Therapy", "Cita Abierta", "Pre-operative clearance", "Consults", "Social work"]
+            },
+            "Priority 3" : {
+                "excludeFrom" : ["Primary Care", "Urgent follow up", "Physical Therapy", "Cita Abierta", "Pre-operative clearance", "Consults", "Social work"]
+            }
+        }
     }
 }
