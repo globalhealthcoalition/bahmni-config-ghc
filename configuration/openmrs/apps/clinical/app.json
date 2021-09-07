@@ -36,10 +36,76 @@
         },
     	"diagnosisStatus": "Inactive",
             "program": {
-                "patientInformation": {
+                "Goldman Score": {
+                  "patientInformation": {
                     "ageLimit": 100
+                  },
+                  "excludeFrom": [
+                    "Consults",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Need for Surgery",
+                    "Social work",
+                    "Primary Care"
+                  ]
+                },
+                "Primary Care Service": {
+                  "excludeFrom": [
+                    "Consults",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Need for Surgery",
+                    "Social work",
+                    "Pre-operative clearance"
+                  ]
+                },
+                "Consults Service": {
+                  "excludeFrom": [
+                    "Primary Care",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Need for Surgery",
+                    "Social work",
+                    "Pre-operative clearance"
+                  ]
+                },
+                "Priority 1": {
+                  "excludeFrom": [
+                    "Primary Care",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Consults",
+                    "Social work",
+                    "Pre-operative clearance"
+                  ]
+                },
+                "Priority 2": {
+                  "excludeFrom": [
+                    "Primary Care",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Consults",
+                    "Social work",
+                    "Pre-operative clearance"
+                  ]
+                },
+                "Priority 3": {
+                  "excludeFrom": [
+                    "Primary Care",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Consults",
+                    "Social work",
+                    "Pre-operative clearance"
+                  ]
                 }
-            },
+              },
             "patientContext": {
         		"programAttributes": [
             		"Id_Number",
@@ -55,74 +121,6 @@
        		],
         		"preferredIdentifier": "Id_Number"
     	},
-        "program1": {
-            "Goldman Score" : {
-                "excludeFrom" : [
-                    "Consults",
-                    "Urgent follow up",
-                    "Physical Therapy",
-                    "Cita Abierta",
-                    "Need for Surgery",
-                    "Social work",
-                    "Primary Care"
-                ]
-            },
-            "Primary Care Service" : {
-                "excludeFrom" : [
-                    "Consults",
-                    "Urgent follow up",
-                    "Physical Therapy",
-                    "Cita Abierta",
-                    "Need for Surgery",
-                    "Social work",
-                    "Pre-operative clearance"
-                ]
-            },
-            "Consults Service" : {
-                "excludeFrom" : [
-                    "Primary Care",
-                    "Urgent follow up",
-                    "Physical Therapy",
-                    "Cita Abierta",
-                    "Need for Surgery",
-                    "Social work",
-                    "Pre-operative clearance"
-                ]
-            },
-            "Priority 1" : {
-                "excludeFrom" : [
-                    "Primary Care",
-                    "Urgent follow up",
-                    "Physical Therapy",
-                    "Cita Abierta",
-                    "Consults",
-                    "Social work",
-                    "Pre-operative clearance"
-                ]
-            },
-            "Priority 2" : {
-                "excludeFrom" : [
-                    "Primary Care",
-                    "Urgent follow up",
-                    "Physical Therapy",
-                    "Cita Abierta",
-                    "Consults",
-                    "Social work",
-                    "Pre-operative clearance"
-                ]
-            },
-            "Priority 3" : {
-                "excludeFrom" : [
-                    "Primary Care",
-                    "Urgent follow up",
-                    "Physical Therapy",
-                    "Cita Abierta",
-                    "Consults",
-                    "Social work",
-                    "Pre-operative clearance"
-                ]
-            }
-        },
         "obsIgnoreList": [
             "REGISTRATION FEES",
             "COMMENTS",
