@@ -12,16 +12,16 @@
         "order": 1,
         "requiredPrivilege": "app:clinical"
     },
-    "bahmniClinicalPatientsSearchPatientsActiveInPrograms": {
-        "id": "bahmni.clinical.patients.search.patientsActiveInPrograms",
+    "bahmniClinicalPatientsSearchPatientsEnrolledInPrograms": {
+        "id": "bahmni.clinical.patients.search.patientsEnrolledInPrograms",
         "extensionPointId": "org.bahmni.patient.search",
         "type": "config",
         "extensionParams": {
-            "searchHandler": "emrapi.sqlSearch.patientsActiveInPrograms",
-            "translationKey": "MODULE_LABEL_ACTIVE_IN_PROGRAM_KEY",
+            "searchHandler": "emrapi.sqlSearch.patientsEnrolledInPrograms",
+            "translationKey": "MODULE_LABEL_ENROLLED_KEY",
             "forwardUrl": "#/programs/patient/{{patientUuid}}/consultationContext"
         },
-        "label": "Active in Program",
+        "label": "Enrolled",
         "order": 2,
         "requiredPrivilege": "app:clinical"
     },
