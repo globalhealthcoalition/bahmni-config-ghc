@@ -100,7 +100,16 @@
       "programAttributes": [],
       "forDataAnalysis": true,
       "showAllStates": true,
-      "programNamesToFilter": ["Need for Surgery", "Urgent follow up"]
+      "programNamesToFilter": [
+        "Need for Surgery",
+        "Urgent follow up",
+        "Physical Therapy",
+        "Cita Abierta",
+        "Pre-operative clearance",
+        "Consults",
+        "Primary Care",
+        "Social work"
+      ]
     }
   },
   "pivotReportForPrograms": {
@@ -116,7 +125,16 @@
           "programAttributes": [],
           "forDataAnalysis": true,
           "showAllStates": true,
-          "programNamesToFilter": ["Need for Surgery", "Urgent follow up"]
+          "programNamesToFilter": [
+            "Need for Surgery",
+            "Urgent follow up",
+            "Physical Therapy",
+            "Cita Abierta",
+            "Pre-operative clearance",
+            "Consults",
+            "Primary Care",
+            "Social work"
+          ]
         }
       },
       "columnGroups": ["Program name"],
