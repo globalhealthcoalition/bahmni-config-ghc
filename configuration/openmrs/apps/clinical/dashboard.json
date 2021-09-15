@@ -380,6 +380,14 @@
                     "groupByVisits":true
                 }
             },
+            "patientAppointments": {
+                "type": "custom",
+                "displayOrder": 18,
+                "config": {
+                    "title": "DASHBOARD_TITLE_APPOINTMENTS_KEY",
+                    "template": "<patient-appointments-dashboard section='config' patient='patient'></patient-appointments-dashboard>"
+                }
+            },
             "admissionDetails":{
                 "translationKey":"DASHBOARD_TITLE_ADMISSION_DETAILS_KEY",
                 "type":"admissionDetails",
