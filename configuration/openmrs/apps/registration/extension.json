@@ -39,7 +39,7 @@
             "formName": "Fee Information",
             "conceptNames": ["Registration Fee","Comments"],
             "required":true,
-            "showLatest": true
+            "showLatest": false
         },
         "order": 1,
         "requiredPrivilege": "Edit Visits"
