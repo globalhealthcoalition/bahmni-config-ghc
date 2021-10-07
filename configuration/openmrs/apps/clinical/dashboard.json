@@ -41,13 +41,13 @@
       "treatments": {
         "translationKey": "DASHBOARD_TITLE_TREATMENTS_KEY",
         "type": "treatment",
-        "displayOrder": 4,
+        "displayOrder": 3,
         "dashboardConfig": {
           "showFlowSheet": true,
           "showListView": true,
           "showRoute": true,
           "showDrugForm": true,
-          "numberOfVisits": 5,
+          "numberOfVisits": 2,
           "showOtherActive": true,
           "showDetailsButton": true
         },
@@ -66,19 +66,19 @@
         "translationKey": "DASHBOARD_TITLE_RADIOLOGY_KEY",
         "type": "radiology",
         "showDetailsButton": true,
-        "displayOrder": 5
+        "displayOrder": 4
       },
       "programs": {
         "translationKey": "DASHBOARD_TITLE_PROGRAMS_KEY",
         "type": "programs",
-        "displayOrder": 6
+        "displayOrder": 5
       },
       "labOrdersDisplayControl": {
         "translationKey": "DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
         "type": "ordersControl",
         "orderType": "Lab Order",
         "showDetailsButton": true,
-        "displayOrder": 9,
+        "displayOrder": 6,
         "dashboardConfig": {
           "conceptNames": ["Systolic", "Diastolic", "Posture", "Temperature"]
         },
@@ -91,21 +91,40 @@
         "translationKey": "DASHBOARD_TITLE_NUTRITIONAL_VALUES_KEY",
         "type": "vitals",
         "isObservation": true,
-        "displayOrder": 11,
+        "displayOrder": 7,
         "dashboardConfig": {
-          "conceptNames": ["HEIGHT", "Weight", "BMI", "BMI STATUS"],
           "showDetailsButton": true,
-          "numberOfVisits": 2
+          "scope": "latest",
+          "numberOfVisits": 2,
+          "conceptNames": [
+            "HEIGHT",
+            "Weight",
+            "BMI",
+            "BMI STATUS",
+            "Head Circumference"
+          ]
         },
         "expandedViewConfig": {
-          "conceptNames": ["HEIGHT", "Weight", "BMI", "BMI STATUS"],
-          "numberOfVisits": 2,
-          "scope": "latest",
           "showDetailsButton": true,
+          "numberOfVisits": 4,
+          "conceptNames": [
+            "HEIGHT",
+            "Weight",
+            "BMI",
+            "BMI STATUS",
+            "Head Circumference"
+          ],
           "pivotTable": {
-            "numberOfVisits": "10",
             "groupBy": "encounters",
-            "obsConcepts": ["HEIGHT", "Weight", "BMI", "BMI STATUS"]
+            "obsConcepts": [
+              "HEIGHT",
+              "Weight",
+              "BMI",
+              "BMI STATUS",
+              "Head Circumference"
+            ],
+            "drugConcepts": [],
+            "labConcepts": []
           }
         }
       },
@@ -113,10 +132,11 @@
         "translationKey": "DASHBOARD_TITLE_VITALS_KEY",
         "type": "vitals",
         "isObservation": true,
-        "displayOrder": 12,
+        "displayOrder": 8,
         "dashboardConfig": {
           "showDetailsButton": true,
           "conceptNames": [
+            "Pulse",
             "Blood Pressure",
             "Temperature",
             "Respiratory Rate",
@@ -126,17 +146,19 @@
         },
         "expandedViewConfig": {
           "conceptNames": [
+            "Pulse",
             "Blood Pressure",
             "Temperature",
             "Respiratory Rate",
             "Oxygen Saturation"
           ],
-          "numberOfVisits": 2,
+          "numberOfVisits": 4,
           "showDetailsButton": true,
           "pivotTable": {
             "numberOfVisits": "10",
             "groupBy": "encounters",
             "obsConcepts": [
+              "Pulse",
               "Blood Pressure",
               "Temperature",
               "Respiratory Rate",
@@ -149,7 +171,7 @@
         "translationKey": "DASHBOARD_TITLE_VACCINATION_HISTORY_KEY",
         "type": "vitals",
         "isObservation": true,
-        "displayOrder": 12,
+        "displayOrder": 9,
         "dashboardConfig": {
           "showDetailsButton": true,
           "conceptNames": ["Vaccination History"],
@@ -157,7 +179,7 @@
         },
         "expandedViewConfig": {
           "conceptNames": ["Vaccination History"],
-          "numberOfVisits": 2,
+          "numberOfVisits": 4,
           "showDetailsButton": true,
           "pivotTable": {
             "numberOfVisits": "10",
@@ -172,15 +194,125 @@
         "translationKey": "DASHBOARD_TITLE_HISTORY_AND_EXAMINATIONS_KEY",
         "type": "vitals",
         "isObservation": true,
-        "displayOrder": 14,
+        "displayOrder": 10,
         "dashboardConfig": {
           "showDetailsButton": true,
-          "conceptNames": ["Chief Complaint Data"],
+          "conceptNames": [
+            "Chief Complaint",
+            "History Notes",
+            "Examination Notes",
+            "Assessment and Plan",
+            "Image"
+          ],
           "numberOfVisits": 2
         },
         "expandedViewConfig": {
-          "conceptNames": ["Chief Complaint Data"],
-          "numberOfVisits": 2,
+          "conceptNames": [
+            "Chief Complaint Data",
+            "History Notes",
+            "Examination Notes",
+            "Assessment and Plan",
+            "Image"
+          ],
+          "numberOfVisits": 4,
+          "showDetailsButton": true,
+          "pivotTable": {}
+        }
+      },
+      "intake": {
+        "translationKey": "DASHBOARD_TITLE_INTAKE_KEY",
+        "type": "vitals",
+        "isObservation": true,
+        "displayOrder": 11,
+        "dashboardConfig": {
+          "showDetailsButton": true,
+          "conceptNames": ["Reason for visit", "Allergies", "Smoking History"],
+          "numberOfVisits": 2
+        },
+        "expandedViewConfig": {
+          "conceptNames": ["Reason for visit", "Allergies", "Smoking History"],
+          "numberOfVisits": 4,
+          "showDetailsButton": true,
+          "pivotTable": {}
+        }
+      },
+      "covid19": {
+        "translationKey": "DASHBOARD_TITLE_COVID_KEY",
+        "type": "vitals",
+        "isObservation": true,
+        "displayOrder": 12,
+        "dashboardConfig": {
+          "showDetailsButton": true,
+          "conceptNames": [
+            "Covid 19 Signs and Symptom in past 14 days",
+            "Tested for COVID 19"
+          ],
+          "numberOfVisits": 2
+        },
+        "expandedViewConfig": {
+          "conceptNames": [
+            "Presence of Symptoms",
+            "Covid 19 Signs and Symptom Set",
+            "Covid 19 Test Set"
+          ],
+          "numberOfVisits": 4,
+          "showDetailsButton": true,
+          "pivotTable": {}
+        }
+      },
+      "socialEconomic": {
+        "translationKey": "DASHBOARD_TITLE_SOCIAL_ECONOMIC_KEY",
+        "type": "vitals",
+        "isObservation": true,
+        "displayOrder": 13,
+        "dashboardConfig": {
+          "showDetailsButton": true,
+          "conceptNames": [
+            "Profession",
+            "Currently working",
+            "Type of work",
+            "Monthly Salary"
+          ],
+          "numberOfVisits": 2
+        },
+        "expandedViewConfig": {
+          "conceptNames": [
+            "Occupation Set",
+            "Living Status",
+            "Family Structure",
+            "Monthly expenses",
+            "Annual expenses",
+            "Health",
+            "Transportation you use to come to HFSC",
+            "Scheduled Surgery",
+            "Interview method"
+          ],
+          "numberOfVisits": 4,
+          "showDetailsButton": true,
+          "pivotTable": {}
+        }
+      },
+      "checkout": {
+        "translationKey": "DASHBOARD_TITLE_CHECK_OUT_KEY",
+        "type": "vitals",
+        "isObservation": true,
+        "displayOrder": 14,
+        "dashboardConfig": {
+          "showDetailsButton": true,
+          "conceptNames": [
+            "Patient Satisfaction Score",
+            "Patient Satisfaction Comment",
+            "Complaint Addressed"
+          ],
+          "numberOfVisits": 2
+        },
+        "expandedViewConfig": {
+          "conceptNames": [
+            "Patient Satisfaction Score",
+            "Patient Satisfaction Comment",
+            "Complaint Addressed"
+          ],
+          "numberOfVisits": 4,
           "showDetailsButton": true,
           "pivotTable": {}
         }
@@ -188,7 +320,7 @@
       "visits": {
         "translationKey": "DASHBOARD_TITLE_VISITS_KEY",
         "type": "visits",
-        "displayOrder": 17,
+        "displayOrder": 15,
         "dashboardConfig": {
           "title": null,
           "maximumNoOfVisits": 8,
@@ -197,7 +329,7 @@
       },
       "patientAppointments": {
         "type": "custom",
-        "displayOrder": 18,
+        "displayOrder": 16,
         "config": {
           "title": "DASHBOARD_TITLE_APPOINTMENTS_KEY",
           "template": "<patient-appointments-dashboard section='config' patient='patient'></patient-appointments-dashboard>"
@@ -293,15 +425,25 @@
         },
         "displayOrder": 2
       },
-      "weight/BMI": {
+      "weight": {
         "type": "observationGraph",
-        "title": "Weight/BMI",
+        "translationKey": "DASHBOARD_TITLE_WEIGHT",
         "config": {
-          "yAxisConcepts": ["Weight", "BMI"],
+          "yAxisConcepts": ["Poids"],
           "xAxisConcept": "observationDateTime",
           "numberOfVisits": 10
         },
         "displayOrder": 3
+      },
+      "BMI": {
+        "type": "observationGraph",
+        "translationKey": "DASHBOARD_TITLE_BMI",
+        "config": {
+          "yAxisConcepts": ["BMI"],
+          "xAxisConcept": "observationDateTime",
+          "numberOfVisits": 10
+        },
+        "displayOrder": 4
       },
       "observationGraph": {
         "type": "observationGraph",
