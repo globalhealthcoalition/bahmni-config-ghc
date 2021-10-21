@@ -27,6 +27,9 @@ public class BahmniObsValueCalculator implements ObsValueCalculator {
     static Double ZERO = 0.0;
     static Map<BahmniObservation, BahmniObservation> obsParentMap = new HashMap<BahmniObservation, BahmniObservation>();
 
+    static public String HEIGHT_UUID = "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+    static public String WEIGHT_UUID = "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+
     public static enum BmiStatus {
         VERY_SEVERELY_UNDERWEIGHT("Very Severely Underweight"),
         SEVERELY_UNDERWEIGHT("Severely Underweight"),
@@ -58,8 +61,8 @@ public class BahmniObsValueCalculator implements ObsValueCalculator {
         Collection<BahmniObservation> observations = bahmniEncounterTransaction.getObservations()
         def nowAsOfEncounter = bahmniEncounterTransaction.getEncounterDateTime() != null ? bahmniEncounterTransaction.getEncounterDateTime() : new Date();
 
- BahmniObservation heightObservation = findByUUID("5090AAAAAAAAAAAAAAAAAAAAAAAAAAAA", observations, null);
- BahmniObservation weightObservation = findByUUID("5089AAAAAAAAAAAAAAAAAAAAAAAAAAAA", observations, null);
+ BahmniObservation heightObservation = findByUUID(HEIGHT_UUID, observations, null);
+ BahmniObservation weightObservation = findByUUID(WEIGHT_UUID, observations, null);
         BahmniObservation parent = null;
 
         if (hasValue(heightObservation) || hasValue(weightObservation)) {
@@ -69,8 +72,8 @@ public class BahmniObsValueCalculator implements ObsValueCalculator {
                 Set<Obs> latestObsOfEncounter = encounter.getObsAtTopLevel(true);
                 latestObsOfEncounter.each { Obs latestObs ->
                     for (Obs groupMember : latestObs.groupMembers) {
-                        heightObs = heightObs ? heightObs : (groupMember.concept.getUuid().equalsIgnoreCase("5090AAAAAAAAAAAAAAAAAAAAAAAAAAAA") ? groupMember : null);
-                        weightObs = weightObs ? weightObs : (groupMember.concept.getUuid().equalsIgnoreCase("5089AAAAAAAAAAAAAAAAAAAAAAAAAAAA") ? groupMember : null);
+                        heightObs = heightObs ? heightObs : (groupMember.concept.getUuid().equalsIgnoreCase(HEIGHT_UUID) ? groupMember : null);
+                        weightObs = weightObs ? weightObs : (groupMember.concept.getUuid().equalsIgnoreCase(WEIGHT_UUID) ? groupMember : null);
                         
                     }
                 }
@@ -107,8 +110,8 @@ public class BahmniObsValueCalculator implements ObsValueCalculator {
                 return
             }
 
-            def previousHeightValue = fetchLatestValueByUUID("5090AAAAAAAAAAAAAAAAAAAAAAAAAAAA", bahmniEncounterTransaction.getPatientUuid(), heightObservation, nowAsOfEncounter)
-            def previousWeightValue = fetchLatestValueByUUID("5089AAAAAAAAAAAAAAAAAAAAAAAAAAAA", bahmniEncounterTransaction.getPatientUuid(), weightObservation, nowAsOfEncounter)
+            def previousHeightValue = fetchLatestValueByUUID(HEIGHT_UUID, bahmniEncounterTransaction.getPatientUuid(), heightObservation, nowAsOfEncounter)
+            def previousWeightValue = fetchLatestValueByUUID(WEIGHT_UUID, bahmniEncounterTransaction.getPatientUuid(), weightObservation, nowAsOfEncounter)
 
             Double height = hasValue(heightObservation) && !heightObservation.voided ? heightObservation.getValue() as Double : previousHeightValue
             Double weight = hasValue(weightObservation) && !weightObservation.voided ? weightObservation.getValue() as Double : previousWeightValue
