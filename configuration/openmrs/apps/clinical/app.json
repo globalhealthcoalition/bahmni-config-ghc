@@ -49,6 +49,71 @@
                   "Social work",
                   "Primary Care"
                 ]
+                "Primary Care Service": {
+                  "excludeFrom": [
+                    "Consults",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Need for Surgery",
+                    "Social work",
+                    "Pre-operative clearance"
+                  ]
+                },
+                "Consults Service": {
+                  "excludeFrom": [
+                    "Primary Care",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Need for Surgery",
+                    "Social work",
+                    "Pre-operative clearance"
+                  ]
+                },"Status": {
+                    "excludeFrom": [
+                      "Primary Care",
+                      "Urgent follow up",
+                      "Physical Therapy",
+                      "Cita Abierta",
+                      "Consults",
+                      "Social work",
+                      "Pre-operative clearance"
+                    ]
+                  },
+                "Priority 1": {
+                  "excludeFrom": [
+                    "Primary Care",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Consults",
+                    "Social work",
+                    "Pre-operative clearance"
+                  ]
+                },
+                "Priority 2": {
+                  "excludeFrom": [
+                    "Primary Care",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Consults",
+                    "Social work",
+                    "Pre-operative clearance"
+                  ]
+                },
+                "Priority 3": {
+                  "excludeFrom": [
+                    "Primary Care",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Consults",
+                    "Social work",
+                    "Pre-operative clearance"
+                  ]
+                }
               },
               "Primary Care Service": {
                 "excludeFrom": [
