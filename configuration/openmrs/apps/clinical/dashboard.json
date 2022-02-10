@@ -73,20 +73,6 @@
         "type": "programs",
         "displayOrder": 5
       },
-      "labOrdersDisplayControl": {
-        "translationKey": "DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
-        "type": "ordersControl",
-        "orderType": "Lab Order",
-        "showDetailsButton": true,
-        "displayOrder": 6,
-        "dashboardConfig": {
-          "conceptNames": ["Systolic", "Diastolic", "Posture", "Temperature"]
-        },
-        "expandedViewConfig": {
-          "conceptNames": ["Systolic", "Diastolic", "Posture", "Temperature"],
-          "showDetailsButton": true
-        }
-      },
       "nutritionalValues": {
         "translationKey": "DASHBOARD_TITLE_NUTRITIONAL_VALUES_KEY",
         "type": "vitals",
@@ -350,8 +336,10 @@
           "referenceData": "heightForAge2_20Years.csv",
           "numberOfVisits": 20
         },
+        
         "displayOrder": 30
       },
+      
       "lengthForAge0_36Chart": {
         "type": "observationGraph",
         "translationKey": "DASHBOARD_TITLE_HEIGHT_AGE_0_36_KEY",
@@ -454,6 +442,22 @@
           "numberOfVisits": 10
         },
         "displayOrder": 5
+      }
+    }
+  },
+  "lab orders":{
+    "translationKey": "DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
+    "displayByDefault": true,
+    "maxRecentlyViewedPatients": 10,
+    "sections": {
+      "labOrders": {
+        "translationKey": "DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
+        "type": "ordersControl",
+        "orderType": "Lab Order",
+        "showDetailsButton": true,
+        "displayOrder": 10,
+        "dashboardConfig": {},
+        "numberOfVisits": 5
       }
     }
   },
