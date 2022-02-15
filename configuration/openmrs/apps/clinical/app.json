@@ -61,6 +61,18 @@
                     "Pre-operative clearance"
                   ]
                 },
+
+                "Primary Care Status": {
+                  "excludeFrom": [
+                    "Consults",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Need for Surgery",
+                    "Social work",
+                    "Pre-operative clearance"
+                  ]
+                },
                 "Consults Service": {
                   "excludeFrom": [
                     "Primary Care",
