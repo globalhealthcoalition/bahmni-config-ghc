@@ -81,17 +81,6 @@
           "Pre-operative clearance"
         ]
       },
-      "Needs Surgery Status": {
-        "excludeFrom": [
-          "Primary Care",
-          "Urgent follow up",
-          "Physical Therapy",
-          "Cita Abierta",
-          "Consults",
-          "Social work",
-          "Pre-operative clearance"
-        ]
-      },
       "Priority 1": {
         "excludeFrom": [
           "Primary Care",
@@ -125,7 +114,19 @@
           "Pre-operative clearance"
         ]
       }
-    },
+      },
+      "Needs Surgery Status": {
+        "excludeFrom": [
+          "Primary Care",
+          "Urgent follow up",
+          "Physical Therapy",
+          "Cita Abierta",
+          "Consults",
+          "Social work",
+          "Pre-operative clearance"
+        ]
+      }
+      },
     "patientContext": {
       "programAttributes": [
         "Id_Number",
@@ -222,4 +223,3 @@
       }
     }
   }
-}
