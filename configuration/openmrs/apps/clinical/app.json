@@ -1,225 +1,217 @@
 {
-  "id": "bahmni.clinical",
-  "extensionPoints": [
-    {
-      "id": "org.bahmni.clinical.consultation.board",
-      "description": "Bahmni Clinical Consultation Page"
-    },
-    {
-      "id": "org.bahmni.clinical.conceptSetGroup.*",
-      "description": "Define conceptsets part of a conceptset group"
-    },
-    {
-      "id": "org.bahmni.clinical.orders",
-      "description": "Bahmni Orders Page"
-    },
-    {
-      "id": "org.bahmni.patient.search",
-      "description": "Bahmni Patient search, lookups Page"
-    }
-  ],
-  "contextModel": [
-    "patientUuid",
-    "visitUuid"
-  ],
-  "config": {
-    "enablePACSOptions": true,
-    "quickPrints": false,
-    "networkConnectivity": {
-      "showNetworkStatusMessage": true,
-      "networkStatusCheckInterval": 5000,
-      "locales": [
+    "id": "bahmni.clinical",
+    "extensionPoints": [
         {
-          "locale": "fr",
-          "css": "offline-language-french"
+            "id": "org.bahmni.clinical.consultation.board",
+            "description": "Bahmni Clinical Consultation Page"
         },
         {
-          "locale": "es",
-          "css": "offline-language-spanish"
+            "id": "org.bahmni.clinical.conceptSetGroup.*",
+            "description": "Define conceptsets part of a conceptset group"
         },
         {
-          "locale": "pt",
-          "css": "offline-language-portuguese-brazil"
+            "id": "org.bahmni.clinical.orders",
+            "description": "Bahmni Orders Page"
+        },
+        {
+            "id": "org.bahmni.patient.search",
+            "description": "Bahmni Patient search, lookups Page"
         }
-      ]
-    },
-    "diagnosisStatus": "Inactive",
-    "program": {
-      "Goldman Score": {
-        "patientInformation": {
-          "ageLimit": 100
-        },
-        "excludeFrom": [
-          "Consults",
-          "Urgent follow up",
-          "Physical Therapy",
-          "Cita Abierta",
-          "Need for Surgery",
-          "Social work",
-          "Primary Care"
-        ]
-      },
-      "Primary Care Service": {
-        "excludeFrom": [
-          "Consults",
-          "Urgent follow up",
-          "Physical Therapy",
-          "Cita Abierta",
-          "Need for Surgery",
-          "Social work",
-          "Pre-operative clearance"
-        ]
-      },
-      "Consults Service": {
-        "excludeFrom": [
-          "Primary Care",
-          "Urgent follow up",
-          "Physical Therapy",
-          "Cita Abierta",
-          "Need for Surgery",
-          "Social work",
-          "Pre-operative clearance"
-        ]
-      },
-      "Priority 1": {
-        "excludeFrom": [
-          "Primary Care",
-          "Urgent follow up",
-          "Physical Therapy",
-          "Cita Abierta",
-          "Consults",
-          "Social work",
-          "Pre-operative clearance"
-        ]
-      },
-      "Priority 2": {
-        "excludeFrom": [
-          "Primary Care",
-          "Urgent follow up",
-          "Physical Therapy",
-          "Cita Abierta",
-          "Consults",
-          "Social work",
-          "Pre-operative clearance"
-        ]
-      },
-      "Priority 3": {
-        "excludeFrom": [
-          "Primary Care",
-          "Urgent follow up",
-          "Physical Therapy",
-          "Cita Abierta",
-          "Consults",
-          "Social work",
-          "Pre-operative clearance"
-        ]
-      }
-      },
-      "Needs Surgery Status": {
-        "excludeFrom": [
-          "Primary Care",
-          "Urgent follow up",
-          "Physical Therapy",
-          "Cita Abierta",
-          "Consults",
-          "Social work",
-          "Pre-operative clearance"
-        ]
-      }
-      },
-    "patientContext": {
-      "programAttributes": [
-        "Id_Number",
-        "Doctor",
-        "Stage"
-      ],
-      "personAttributes": [
-        "class",
-        "caste"
-      ],
-      "additionalPatientIdentifiers": [
-        "National ID"
-      ],
-      "preferredIdentifier": "Id_Number"
-    },
-    "obsIgnoreList": [
-      "REGISTRATION FEES",
-      "COMMENTS",
-      "Patient file"
     ],
-    "otherInvestigationsMap": {
-      "Radiology": "Radiology Order",
-      "Endoscopy": "Endoscopy Order"
-    },
-    "allowConsultationWhenNoOpenVisit": false,
-    "defaultVisitType": "OPD",
-    "visitTypeForRetrospectiveEntries": "Special OPD",
-    "maxConceptSetLevels": 3,
-    "allowOnlyCodedDiagnosis": false,
-    "conceptSetUI": {
-      "All Observation Templates": {
-        "showPanelView": false
-      },
-      "Chief Complaint Data": {
-        "autocomplete": true,
-        "codedConceptName": "Chief Complaint",
-        "nonCodedConceptName": "Non-Coded Chief Complaint",
-        "durationRequired": false,
-        "allowAddMore": true
-      },
-      "Posture": {
-        "buttonSelect": true
-      },
-      "P/A Presenting Part": {
-        "multiSelect": true
-      },
-      "FHS": {
-        "buttonSelect": true
-      },
-      "P/S (Per Speculum) - Cervix": {
-        "grid": true
-      },
-      "Anaemia, Stopped Since When": {
-        "conciseText": true
-      },
-      "Tuberculosis Intake Template": {
-        "computeDrugs": true
-      },
-      "Set1": {
-        "allowAddMore": true
-      },
-      "Set2": {
-        "allowAddMore": true
-      },
-      "Coded3": {
-        "multiSelect": true
-      },
-      "Image": {
-        "allowAddMore": true
-      },
-      "Gynaecology, Gravida": {
-        "stepper": true
-      },
-      "Accepted Family Planning methods": {
-        "multiSelect": true
-      },
-      "Patient Satisfaction Score": {
-        "dropdown": true
-      },
-      "defaults": {
-        "Number of living children": 1,
-        "Accepted Family Planning methods": [
-          "Condoms",
-          "Pills"
+    "contextModel": [
+        "patientUuid",
+        "visitUuid"
+    ],
+    "config": {
+        "enablePACSOptions":true,
+        "quickPrints":false,
+        "networkConnectivity" : {
+            "showNetworkStatusMessage": true,
+            "networkStatusCheckInterval": 5000,
+            "locales" : [
+                { "locale" : "fr", "css" : "offline-language-french"},
+                { "locale" : "es", "css": "offline-language-spanish"},
+                { "locale" : "pt", "css": "offline-language-portuguese-brazil"}
+            ]
+        },
+    	"diagnosisStatus": "Inactive",
+            "program": {
+                "Goldman Score": {
+                  "patientInformation": {
+                    "ageLimit": 100
+                  },
+                  "excludeFrom": [
+                    "Consults",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Need for Surgery",
+                    "Social work",
+                    "Primary Care"
+                  ]
+                },
+                "Needs Surgery Status": {
+                    "excludeFrom": [
+                      "Primary Care",
+                      "Urgent follow up",
+                      "Physical Therapy",
+                      "Cita Abierta",
+                      "Consults",
+                      "Social work",
+                      "Pre-operative clearance"
+                    ]
+                  },
+                "Primary Care Service": {
+                  "excludeFrom": [
+                    "Consults",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Need for Surgery",
+                    "Social work",
+                    "Pre-operative clearance"
+                  ]
+                },
+                "Consults Service": {
+                  "excludeFrom": [
+                    "Primary Care",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Need for Surgery",
+                    "Social work",
+                    "Pre-operative clearance"
+                  ]
+                },
+                "Priority 1": {
+                  "excludeFrom": [
+                    "Primary Care",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Consults",
+                    "Social work",
+                    "Pre-operative clearance"
+                  ]
+                },
+                "Priority 2": {
+                  "excludeFrom": [
+                    "Primary Care",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Consults",
+                    "Social work",
+                    "Pre-operative clearance"
+                  ]
+                },
+                "Priority 3": {
+                  "excludeFrom": [
+                    "Primary Care",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Consults",
+                    "Social work",
+                    "Pre-operative clearance"
+                  ]
+                }
+              },
+            "patientContext": {
+        		"programAttributes": [
+            		"Id_Number",
+            		"Doctor",
+            		"Stage"
+        		],
+        		"personAttributes": [
+            		"class",
+            		"caste"
+        		],
+        		"additionalPatientIdentifiers": [
+           			"National ID"
+       		],
+        		"preferredIdentifier": "Id_Number"
+    	},
+        "obsIgnoreList": [
+            "REGISTRATION FEES",
+            "COMMENTS",
+            "Patient file"
         ],
-        "Pain management given": true,
-        "Safe Abortion, Remarks": "Remarks",
-        "Malaria, Death Date": "2015-12-01"
-      }
-    },
-    "visitPage": {
-      "observationDisplay": {
-        "conceptNames": []
-      }
+        "otherInvestigationsMap": {
+            "Radiology": "Radiology Order",
+            "Endoscopy": "Endoscopy Order"
+        },
+        "allowConsultationWhenNoOpenVisit": false,
+        "defaultVisitType": "OPD",
+        "visitTypeForRetrospectiveEntries": "Special OPD",
+        "maxConceptSetLevels": 3,
+        "allowOnlyCodedDiagnosis": false,
+        "conceptSetUI": {
+            "All Observation Templates": {
+                "showPanelView": false
+            },
+            "Chief Complaint Data": {
+                "autocomplete":true,
+                "codedConceptName":"Chief Complaint",
+                "nonCodedConceptName":"Non-Coded Chief Complaint",
+                "durationRequired": false,
+                "allowAddMore": true
+            },
+            "Posture": {
+                "buttonSelect": true
+            },
+            "P/A Presenting Part": {
+                "multiSelect": true
+            },
+            "FHS": {
+                "buttonSelect": true
+            },
+            "P/S (Per Speculum) - Cervix": {
+                "grid": true
+            },
+            "Anaemia, Stopped Since When": {
+                "conciseText": true
+            },
+            "Tuberculosis Intake Template": {
+                "computeDrugs": true
+            },
+            "Set1": {
+                "allowAddMore": true
+            },
+            "Set2": {
+                "allowAddMore": true
+            },
+            "Coded3": {
+                "multiSelect": true
+            },
+            "Image": {
+                "allowAddMore": true
+            },
+            "Gynaecology, Gravida": {
+                "stepper": true
+            },
+            "Accepted Family Planning methods": {
+                "multiSelect": true
+            },
+            "Patient Satisfaction Score":
+            {
+              "dropdown": true
+            },
+            "defaults": {
+                "Number of living children": 1,
+                "Accepted Family Planning methods": [
+                    "Condoms",
+                    "Pills"
+                ],
+                "Pain management given": true,
+                "Safe Abortion, Remarks": "Remarks",
+                "Malaria, Death Date": "2015-12-01"
+            }
+        },
+        "visitPage": {
+            "observationDisplay": {
+                "conceptNames": []
+            }
+        }
     }
-  }
+}
