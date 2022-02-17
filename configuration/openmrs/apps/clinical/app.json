@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "id": "bahmni.clinical",
   "extensionPoints": [
       {
@@ -51,6 +52,84 @@
                 ]
               },
               "Needs Surgery Status": {
+=======
+    "id": "bahmni.clinical",
+    "extensionPoints": [
+        {
+            "id": "org.bahmni.clinical.consultation.board",
+            "description": "Bahmni Clinical Consultation Page"
+        },
+        {
+            "id": "org.bahmni.clinical.conceptSetGroup.*",
+            "description": "Define conceptsets part of a conceptset group"
+        },
+        {
+            "id": "org.bahmni.clinical.orders",
+            "description": "Bahmni Orders Page"
+        },
+        {
+            "id": "org.bahmni.patient.search",
+            "description": "Bahmni Patient search, lookups Page"
+        }
+    ],
+    "contextModel": [
+        "patientUuid",
+        "visitUuid"
+    ],
+    "config": {
+        "enablePACSOptions":true,
+        "quickPrints":false,
+        "networkConnectivity" : {
+            "showNetworkStatusMessage": true,
+            "networkStatusCheckInterval": 5000,
+            "locales" : [
+                { "locale" : "fr", "css" : "offline-language-french"},
+                { "locale" : "es", "css": "offline-language-spanish"},
+                { "locale" : "pt", "css": "offline-language-portuguese-brazil"}
+            ]
+        },
+    	"diagnosisStatus": "Inactive",
+            "program": {
+                "Goldman Score": {
+                  "patientInformation": {
+                    "ageLimit": 100
+                  },
+                  "excludeFrom": [
+                    "Consults",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Need for Surgery",
+                    "Social work",
+                    "Primary Care",
+                    "Anthropometric Study"
+                  ]
+                },
+                "Primary Care Service": {
+                  "excludeFrom": [
+                    "Consults",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Need for Surgery",
+                    "Social work",
+                    "Pre-operative clearance",
+                    "Anthropometric Study"
+                  ]
+                },
+                "Consults Service": {
+                  "excludeFrom": [
+                    "Primary Care",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Need for Surgery",
+                    "Social work",
+                    "Pre-operative clearance",
+                    "Anthropometric Study"
+                  ]
+                },
+                "Priority 1": {
                   "excludeFrom": [
                     "Primary Care",
                     "Urgent follow up",
@@ -58,19 +137,35 @@
                     "Cita Abierta",
                     "Consults",
                     "Social work",
-                    "Pre-operative clearance"
+                    "Pre-operative clearance",
+                    "Anthropometric Study"
                   ]
                 },
-              "Primary Care Service": {
-                "excludeFrom": [
-                  "Consults",
-                  "Urgent follow up",
-                  "Physical Therapy",
-                  "Cita Abierta",
-                  "Need for Surgery",
-                  "Social work",
-                  "Pre-operative clearance"
-                ]
+                "Priority 2": {
+>>>>>>> GHC-113: Exclude 'Anthropometric Study' from all program attributes
+                  "excludeFrom": [
+                    "Primary Care",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Consults",
+                    "Social work",
+                    "Pre-operative clearance",
+                    "Anthropometric Study"
+                  ]
+                },
+                "Priority 3": {
+                  "excludeFrom": [
+                    "Primary Care",
+                    "Urgent follow up",
+                    "Physical Therapy",
+                    "Cita Abierta",
+                    "Consults",
+                    "Social work",
+                    "Pre-operative clearance",
+                    "Anthropometric Study"
+                  ]
+                }
               },
               "Primary Care Status": {
                 "excludeFrom": [
