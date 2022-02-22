@@ -47,7 +47,8 @@
                   "Cita Abierta",
                   "Need for Surgery",
                   "Social work",
-                  "Primary Care"
+                  "Primary Care",
+                  "Anthropometric Study"
                 ]
               },
               "Needs Surgery Status": {
@@ -58,7 +59,8 @@
                     "Cita Abierta",
                     "Consults",
                     "Social work",
-                    "Pre-operative clearance"
+                    "Pre-operative clearance",
+                    "Anthropometric Study"
                   ]
                 },
               "Primary Care Service": {
@@ -69,7 +71,8 @@
                   "Cita Abierta",
                   "Need for Surgery",
                   "Social work",
-                  "Pre-operative clearance"
+                  "Pre-operative clearance",
+                  "Anthropometric Study"
                 ]
               },
               "Primary Care Status": {
@@ -80,7 +83,8 @@
                   "Cita Abierta",
                   "Need for Surgery",
                   "Social work",
-                  "Pre-operative clearance"
+                  "Pre-operative clearance",
+                  "Anthropometric Study"
                 ]
               },
               "Consults Service": {
@@ -91,7 +95,8 @@
                   "Cita Abierta",
                   "Need for Surgery",
                   "Social work",
-                  "Pre-operative clearance"
+                  "Pre-operative clearance",
+                  "Anthropometric Study"
                 ]
               },
               "Priority 1": {
@@ -102,7 +107,8 @@
                   "Cita Abierta",
                   "Consults",
                   "Social work",
-                  "Pre-operative clearance"
+                  "Pre-operative clearance",
+                  "Anthropometric Study"
                 ]
               },
               "Priority 2": {
@@ -113,7 +119,8 @@
                   "Cita Abierta",
                   "Consults",
                   "Social work",
-                  "Pre-operative clearance"
+                  "Pre-operative clearance",
+                  "Anthropometric Study"
                 ]
               },
               "Priority 3": {
@@ -124,7 +131,8 @@
                   "Cita Abierta",
                   "Consults",
                   "Social work",
-                  "Pre-operative clearance"
+                  "Pre-operative clearance",
+                  "Anthropometric Study"
                 ]
               }
             },
