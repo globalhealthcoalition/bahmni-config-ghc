@@ -44,25 +44,13 @@
                   "Consults",
                   "Urgent follow up",
                   "Physical Therapy",
+                  "Anthropometric Study",
                   "Cita Abierta",
                   "Need for Surgery",
                   "Social work",
-                  "Primary Care",
-                  "Anthropometric Study"
+                  "Primary Care"
                 ]
               },
-              "Needs Surgery Status": {
-                  "excludeFrom": [
-                    "Primary Care",
-                    "Urgent follow up",
-                    "Physical Therapy",
-                    "Cita Abierta",
-                    "Consults",
-                    "Social work",
-                    "Pre-operative clearance",
-                    "Anthropometric Study"
-                  ]
-                },
               "Primary Care Service": {
                 "excludeFrom": [
                   "Consults",
@@ -70,21 +58,9 @@
                   "Physical Therapy",
                   "Cita Abierta",
                   "Need for Surgery",
+                  "Anthropometric Study",
                   "Social work",
-                  "Pre-operative clearance",
-                  "Anthropometric Study"
-                ]
-              },
-              "Primary Care Status": {
-                "excludeFrom": [
-                  "Consults",
-                  "Urgent follow up",
-                  "Physical Therapy",
-                  "Cita Abierta",
-                  "Need for Surgery",
-                  "Social work",
-                  "Pre-operative clearance",
-                  "Anthropometric Study"
+                  "Pre-operative clearance"
                 ]
               },
               "Consults Service": {
@@ -94,9 +70,9 @@
                   "Physical Therapy",
                   "Cita Abierta",
                   "Need for Surgery",
+                  "Anthropometric Study",
                   "Social work",
-                  "Pre-operative clearance",
-                  "Anthropometric Study"
+                  "Pre-operative clearance"
                 ]
               },
               "Priority 1": {
@@ -104,11 +80,11 @@
                   "Primary Care",
                   "Urgent follow up",
                   "Physical Therapy",
+                  "Anthropometric Study",
                   "Cita Abierta",
                   "Consults",
                   "Social work",
-                  "Pre-operative clearance",
-                  "Anthropometric Study"
+                  "Pre-operative clearance"
                 ]
               },
               "Priority 2": {
@@ -116,11 +92,35 @@
                   "Primary Care",
                   "Urgent follow up",
                   "Physical Therapy",
+                  "Anthropometric Study",
                   "Cita Abierta",
                   "Consults",
                   "Social work",
-                  "Pre-operative clearance",
-                  "Anthropometric Study"
+                  "Pre-operative clearance"
+                ]
+              },
+              "Needs Surgery Status": {
+                "excludeFrom": [
+                  "Primary Care",
+                  "Urgent follow up",
+                  "Physical Therapy",
+                  "Anthropometric Study",
+                  "Cita Abierta",
+                  "Consults",
+                  "Social work",
+                  "Pre-operative clearance"
+                ]
+              },
+              "Primary Care Status": {
+                "excludeFrom": [
+                  "Consults",
+                  "Urgent follow up",
+                  "Physical Therapy",
+                  "Cita Abierta",
+                  "Need for Surgery",
+                  "Anthropometric Study",
+                  "Social work",
+                  "Pre-operative clearance"
                 ]
               },
               "Priority 3": {
@@ -128,11 +128,11 @@
                   "Primary Care",
                   "Urgent follow up",
                   "Physical Therapy",
+                  "Anthropometric Study",
                   "Cita Abierta",
                   "Consults",
                   "Social work",
-                  "Pre-operative clearance",
-                  "Anthropometric Study"
+                  "Pre-operative clearance"
                 ]
               }
             },
