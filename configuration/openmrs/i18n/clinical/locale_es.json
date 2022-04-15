@@ -13,6 +13,7 @@
   
   "DASHBOARD_TITLE_LAB_RESULTS_KEY": "Resultados de Laboratorio",
   "DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY": "Ordenes de laboratorio",
+  "DASHBOARD_TITLE_LAB_ORDERS_RESULTS_KEY": "Órdenes/Resultados de laboratorio",
   "DASHBOARD_TITLE_PACS_KEY": "Pacs",
   "DASHBOARD_TITLE_RADIOLOGY_KEY": "Radiología",
   "DASHBOARD_TITLE_VISITS_KEY": "Visitas",

@@ -73,20 +73,6 @@
         "type": "programs",
         "displayOrder": 5
       },
-      "labOrdersDisplayControl": {
-        "translationKey": "DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
-        "type": "ordersControl",
-        "orderType": "Lab Order",
-        "showDetailsButton": true,
-        "displayOrder": 6,
-        "dashboardConfig": {
-          "conceptNames": ["Systolic", "Diastolic", "Posture", "Temperature"]
-        },
-        "expandedViewConfig": {
-          "conceptNames": ["Systolic", "Diastolic", "Posture", "Temperature"],
-          "showDetailsButton": true
-        }
-      },
       "nutritionalValues": {
         "translationKey": "DASHBOARD_TITLE_NUTRITIONAL_VALUES_KEY",
         "type": "vitals",
@@ -458,7 +444,7 @@
     }
   },
   "orders": {
-    "translationKey": "DASHBOARD_TITLE_LAB_RESULTS_KEY",
+    "translationKey": "DASHBOARD_TITLE_LAB_ORDERS_RESULTS_KEY",
     "displayByDefault": true,
     "maxRecentlyViewedPatients": 10,
     "sections": {
