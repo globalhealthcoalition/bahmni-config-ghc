@@ -71,7 +71,17 @@
                     "Social work",
                     "Pre-operative clearance"
                   ]
-                },
+                },"Procedure": {
+                    "excludeFrom": [
+                      "Primary Care",
+                      "Urgent follow up",
+                      "Physical Therapy",
+                      "Cita Abierta",
+                      "Consults",
+                      "Social work",
+                      "Pre-operative clearance"
+                    ]
+                  },
                 "Priority 1": {
                   "excludeFrom": [
                     "Primary Care",
