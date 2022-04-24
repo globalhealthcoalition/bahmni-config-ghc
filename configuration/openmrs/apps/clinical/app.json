@@ -100,6 +100,19 @@
                   "Anthropometric Study"
                 ]
               },
+              "Procedure": {
+                "excludeFrom": [
+                  "Primary Care",
+                  "Urgent follow up",
+                  "Physical Therapy",
+                  "Cita Abierta",
+                  "Consults",
+                  "Social work",
+                  "Pre-operative clearance",
+                  "Anthropometric Study"
+                ]
+              }
+            },
               "Priority 1": {
                 "excludeFrom": [
                   "Primary Care",
@@ -234,4 +247,3 @@
           }
       }
   }
-}
