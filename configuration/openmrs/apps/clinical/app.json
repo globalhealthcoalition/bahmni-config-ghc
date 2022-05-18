@@ -111,8 +111,7 @@
                   "Pre-operative clearance",
                   "Anthropometric Study"
                 ]
-              }
-            },
+              },
               "Priority 1": {
                 "excludeFrom": [
                   "Primary Care",
@@ -149,7 +148,8 @@
                   "Anthropometric Study"
                 ]
               }
-            },
+            }    
+          },
           "patientContext": {
           "programAttributes": [
               "Id_Number",
