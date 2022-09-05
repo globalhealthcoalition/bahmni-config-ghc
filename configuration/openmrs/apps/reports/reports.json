@@ -165,15 +165,15 @@
     "type": "programs",
     "requiredPrivilege": "app:reports",
     "config": {
-      "patientAttributes": [
-        "education",
-        "primaryContact",
-        "secondaryContact"
+      "programAttributes": [
+        "Needs Surgery Status",
+        "Procedure",
+        "Priority 1",
+        "Priority 2",
+        "Priority 3",
+        "Consults Service",
+        "Primary Care Service"
       ],
-      "patientAddresses": [
-        "address2"
-      ],
-      "programAttributes": [],
       "forDataAnalysis": true,
       "showAllStates": true,
       "programNamesToFilter": [
@@ -184,7 +184,16 @@
         "Pre-operative clearance",
         "Consults",
         "Primary Care",
-        "Social work"
+        "Social work",
+        "Anthropometric Study"
+      ],
+      "excludeColumns": [
+        "Patient Created Date",
+        "Birthdate",
+        "End Date",
+        "Start Date",
+        "Program Id",
+        "Patient Id"
       ]
     }
   },
@@ -226,6 +235,195 @@
       ],
       "showTotalRow": true,
       "showTotalColumn": true
+    }
+  },
+  "NeedForSurgery": {
+    "name": "Need For Surgery",
+    "type": "programs",
+    "requiredPrivilege": "app:reports",
+    "config": {
+      "programAttributes": [
+        "Needs Surgery Status",
+        "Procedure",
+        "Priority 1",
+        "Priority 2",
+        "Priority 3"
+      ],
+      "forDataAnalysis": true,
+      "showAllStates": true,
+      "programNamesToFilter": [
+        "Need for Surgery"
+      ],
+      "excludeColumns": [
+        "Patient Created Date",
+        "Birthdate",
+        "Program Name",
+        "End Date",
+        "Start Date",
+        "Program Id",
+        "Patient Id"
+      ]
+    }
+  },
+  "UrgentFollowUp": {
+    "name": "Urgent follow up",
+    "type": "programs",
+    "requiredPrivilege": "app:reports",
+    "config": {
+      "programAttributes": [],
+      "forDataAnalysis": true,
+      "showAllStates": true,
+      "programNamesToFilter": [
+        "Urgent follow up"
+      ],
+      "excludeColumns": [
+        "Patient Created Date",
+        "Birthdate",
+        "Program Name",
+        "End Date",
+        "State",
+        "Start Date",
+        "Program Id",
+        "Patient Id"
+      ]
+    }
+  },
+  "PhysicalTherapy": {
+    "name": "Physical Therapy",
+    "type": "programs",
+    "requiredPrivilege": "app:reports",
+    "config": {
+      "programAttributes": [],
+      "forDataAnalysis": true,
+      "showAllStates": true,
+      "programNamesToFilter": [
+        "Physical Therapy"
+      ],
+      "excludeColumns": [
+        "Patient Created Date",
+        "Birthdate",
+        "Program Name",
+        "End Date",
+        "State",
+        "Start Date",
+        "Program Id",
+        "Patient Id"
+      ]
+    }
+  },
+  "CitaAbierta": {
+    "name": "Cita Abierta",
+    "type": "programs",
+    "requiredPrivilege": "app:reports",
+    "config": {
+      "programAttributes": [],
+      "forDataAnalysis": true,
+      "showAllStates": true,
+      "programNamesToFilter": [
+        "Cita Abierta"
+      ],
+      "excludeColumns": [
+        "Patient Created Date",
+        "Birthdate",
+        "Program Name",
+        "End Date",
+        "State",
+        "Start Date",
+        "Program Id",
+        "Patient Id"
+      ]
+    }
+  },
+  "Consults": {
+    "name": "Consults",
+    "type": "programs",
+    "requiredPrivilege": "app:reports",
+    "config": {
+      "programAttributes": [
+        "Consults Service"
+      ],
+      "forDataAnalysis": true,
+      "showAllStates": true,
+      "programNamesToFilter": [
+        "Consults"
+      ],
+      "excludeColumns": [
+        "Patient Created Date",
+        "Birthdate",
+        "Program Name",
+        "End Date",
+        "Start Date",
+        "Program Id",
+        "Patient Id"
+      ]
+    }
+  },
+  "PrimaryCare": {
+    "name": "Primary Care",
+    "type": "programs",
+    "requiredPrivilege": "app:reports",
+    "config": {
+      "programAttributes": [
+        "Primary Care Service"
+      ],
+      "forDataAnalysis": true,
+      "showAllStates": true,
+      "programNamesToFilter": [
+        "Primary Care"
+      ],
+      "excludeColumns": [
+        "Patient Created Date",
+        "Birthdate",
+        "Program Name",
+        "End Date",
+        "Start Date",
+        "Program Id",
+        "Patient Id"
+      ]
+    }
+  },
+  "SocialWork": {
+    "name": "Social work",
+    "type": "programs",
+    "requiredPrivilege": "app:reports",
+    "config": {
+      "programAttributes": [],
+      "forDataAnalysis": true,
+      "showAllStates": true,
+      "programNamesToFilter": [
+        "Social work"
+      ],
+      "excludeColumns": [
+        "Patient Created Date",
+        "Birthdate",
+        "Program Name",
+        "End Date",
+        "Start Date",
+        "Program Id",
+        "Patient Id"
+      ]
+    }
+  },
+  "AnthropometricStudy": {
+    "name": "Anthropometric Study",
+    "type": "programs",
+    "requiredPrivilege": "app:reports",
+    "config": {
+      "programAttributes": [],
+      "forDataAnalysis": true,
+      "showAllStates": true,
+      "programNamesToFilter": [
+        "Anthropometric Study"
+      ],
+      "excludeColumns": [
+        "Patient Created Date",
+        "Birthdate",
+        "Program Name",
+        "End Date",
+        "Start Date",
+        "Program Id",
+        "Patient Id"
+      ]
     }
   }
 }
