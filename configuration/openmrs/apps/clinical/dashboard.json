@@ -317,8 +317,26 @@
         "type": "custom",
         "displayOrder": 16,
         "config": {
-          "title": "DASHBOARD_TITLE_APPOINTMENTS_KEY",
+          "title": " DASHBOARD_TITLE_APPOINTMENTS_KEY",
           "template": "<patient-appointments-dashboard section='config' patient='patient'></patient-appointments-dashboard>"
+        }
+      },
+      "VaccinationDocument": {
+        "translationKey": "DASHBOARD_TITLE_VACCINATION_DOCUMENT_KEY",
+        "type": "Image",
+        "isObservation": true,
+        "displayOrder": 17,
+        "dashboardConfig": {
+          "title": "DASHBOARD_TITLE_VACCINATION_DOCUMENT_KEY",
+          "showDetailsButton": true,
+          "conceptNames": ["Vaccination Document"],
+          "numberOfVisits": 3
+        },
+        "expandedViewConfig": {
+          "conceptNames": ["Image"],
+          "numberOfVisits": 10,
+          "showDetailsButton": true,
+          "pivotTable": {}
         }
       }
     }
