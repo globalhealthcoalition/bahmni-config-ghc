@@ -47,7 +47,7 @@
           "showListView": true,
           "showRoute": true,
           "showDrugForm": true,
-          "numberOfVisits": 2,
+          "numberOfVisits": 3,
           "showOtherActive": true,
           "showDetailsButton": true
         },
@@ -81,7 +81,7 @@
         "dashboardConfig": {
           "showDetailsButton": true,
           "scope": "latest",
-          "numberOfVisits": 2,
+          "numberOfVisits": 3,
           "conceptNames": [
             "HEIGHT",
             "Weight",
@@ -92,7 +92,7 @@
         },
         "expandedViewConfig": {
           "showDetailsButton": true,
-          "numberOfVisits": 4,
+          "numberOfVisits": 10,
           "conceptNames": [
             "HEIGHT",
             "Weight",
@@ -128,7 +128,7 @@
             "Respiratory Rate",
             "Oxygen Saturation"
           ],
-          "numberOfVisits": 2
+          "numberOfVisits": 3
         },
         "expandedViewConfig": {
           "conceptNames": [
@@ -138,7 +138,7 @@
             "Respiratory Rate",
             "Oxygen Saturation"
           ],
-          "numberOfVisits": 4,
+          "numberOfVisits": 10,
           "showDetailsButton": true,
           "pivotTable": {
             "numberOfVisits": "10",
@@ -161,11 +161,11 @@
         "dashboardConfig": {
           "showDetailsButton": true,
           "conceptNames": ["Vaccination History"],
-          "numberOfVisits": 2
+          "numberOfVisits": 3
         },
         "expandedViewConfig": {
           "conceptNames": ["Vaccination History"],
-          "numberOfVisits": 4,
+          "numberOfVisits": 10,
           "showDetailsButton": true,
           "pivotTable": {
             "numberOfVisits": "10",
@@ -190,7 +190,7 @@
             "Assessment and Plan",
             "Image"
           ],
-          "numberOfVisits": 2
+          "numberOfVisits": 3
         },
         "expandedViewConfig": {
           "conceptNames": [
@@ -200,7 +200,7 @@
             "Assessment and Plan",
             "Image"
           ],
-          "numberOfVisits": 4,
+          "numberOfVisits": 10,
           "showDetailsButton": true,
           "pivotTable": {}
         }
@@ -213,11 +213,11 @@
         "dashboardConfig": {
           "showDetailsButton": true,
           "conceptNames": ["Reason for visit", "Allergies", "Smoking History"],
-          "numberOfVisits": 2
+          "numberOfVisits": 3
         },
         "expandedViewConfig": {
           "conceptNames": ["Reason for visit", "Allergies", "Smoking History"],
-          "numberOfVisits": 4,
+          "numberOfVisits": 10,
           "showDetailsButton": true,
           "pivotTable": {}
         }
@@ -233,7 +233,7 @@
             "Covid 19 Signs and Symptom in past 14 days",
             "Tested for COVID 19"
           ],
-          "numberOfVisits": 2
+          "numberOfVisits": 3
         },
         "expandedViewConfig": {
           "conceptNames": [
@@ -241,7 +241,7 @@
             "Covid 19 Signs and Symptom Set",
             "Covid 19 Test Set"
           ],
-          "numberOfVisits": 4,
+          "numberOfVisits": 10,
           "showDetailsButton": true,
           "pivotTable": {}
         }
@@ -259,7 +259,7 @@
             "Type of work",
             "Monthly Salary"
           ],
-          "numberOfVisits": 2
+          "numberOfVisits": 3
         },
         "expandedViewConfig": {
           "conceptNames": [
@@ -273,7 +273,7 @@
             "Scheduled Surgery",
             "Interview method"
           ],
-          "numberOfVisits": 4,
+          "numberOfVisits": 10,
           "showDetailsButton": true,
           "pivotTable": {}
         }
@@ -290,7 +290,7 @@
             "Patient Satisfaction Comment",
             "Complaint Addressed"
           ],
-          "numberOfVisits": 2
+          "numberOfVisits": 3
         },
         "expandedViewConfig": {
           "conceptNames": [
@@ -298,7 +298,7 @@
             "Patient Satisfaction Comment",
             "Complaint Addressed"
           ],
-          "numberOfVisits": 4,
+          "numberOfVisits": 10,
           "showDetailsButton": true,
           "pivotTable": {}
         }
@@ -309,7 +309,7 @@
         "displayOrder": 15,
         "dashboardConfig": {
           "title": null,
-          "maximumNoOfVisits": 8,
+          "maximumNoOfVisits": 10,
           "groupByVisits": true
         }
       },
