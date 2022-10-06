@@ -464,76 +464,14 @@
         "displayOrder": 11,
         "dashboardConfig": {
           "conceptNames": [
-            "Prostate Specific Antigen",
-            "Rapid malaria",
-            "Rapid HIV",
-            "Blood culture",
-            "Fasting blood glucose",
-            "Random blood glucose",
-            "HbA1C",
-            "mALB",
-            "Covid19 Ag (Immunofluorescence)",
-            "C-Reactive Protein",
-            "Erythrocyte Sedimentation Rate",
-            "Amylase",
-            "Lipase",
-            "Rheumatoid Factor",
-            "Antistreptolysin O",
-            "Prolactin",
-            "Sex Hormones",
-            "Chlamydia",
-            "Gonorrhea",
-            "Hepatitis B",
-            "Hepatitis C",
-            "Helicobacter pylori Antigen",
-            "Rapid Plasma Reagin",
-            "Blood HCG (Pregnancy)",
-            "CBC",
-            "Lipid Profile",
-            "Blood Grouping",
-            "Blood Cross Matching",
-            "Coagulation Profile",
-            "Thyroid Functional Test",
-            "Renal Functional Test",
-            "Liver Functional Test"
+            "Blood"
           ],
           "showDetailsButton": true,
           "numberOfVisits": 3
         },
         "expandedViewConfig": {
           "conceptNames": [
-            "Prostate Specific Antigen",
-            "Rapid malaria",
-            "Rapid HIV",
-            "Blood culture",
-            "Fasting blood glucose",
-            "Random blood glucose",
-            "HbA1C",
-            "mALB",
-            "Covid19 Ag (Immunofluorescence)",
-            "C-Reactive Protein",
-            "Erythrocyte Sedimentation Rate",
-            "Amylase",
-            "Lipase",
-            "Rheumatoid Factor",
-            "Antistreptolysin O",
-            "Prolactin",
-            "Sex Hormones",
-            "Chlamydia",
-            "Gonorrhea",
-            "Hepatitis B",
-            "Hepatitis C",
-            "Helicobacter pylori Antigen",
-            "Rapid Plasma Reagin",
-            "Blood HCG (Pregnancy)",
-            "CBC",
-            "Lipid Profile",
-            "Blood Grouping",
-            "Blood Cross Matching",
-            "Coagulation Profile",
-            "Thyroid Functional Test",
-            "Renal Functional Test",
-            "Liver Functional Test"
+            "Blood"
           ],
           "numberOfVisits": 10,
           "scope": "latest",
@@ -548,20 +486,14 @@
         "displayOrder": 11,
         "dashboardConfig": {
           "conceptNames": [
-            "Urine pregnancy test",
-            "Urine culture",
-            "Urinalysis",
-            "Microscopy Set"
+            "Urine"
           ],
           "showDetailsButton": true,
           "numberOfVisits": 3
         },
         "expandedViewConfig": {
           "conceptNames": [
-            "Urine pregnancy test",
-            "Urine culture",
-            "Urinalysis",
-            "Microscopy Set"
+            "Urine"
           ],
           "numberOfVisits": 10,
           "scope": "latest",
@@ -576,29 +508,14 @@
         "displayOrder": 11,
         "dashboardConfig": {
           "conceptNames": [
-            "Gonorrhea",
-            "Chlamydia",
-            "Trichomonas",
-            "Bacterial vaginosis",
-            "Ferning",
-            "Whiff Test",
-            
-            "Wet Mount",
-            "Wound culture"
+            "Swab"
           ],
           "showDetailsButton": true,
           "numberOfVisits": 3
         },
         "expandedViewConfig": {
           "conceptNames": [
-            "Chlamydia",
-            "Gonorrhea",
-            "Trichomonas",
-            "Bacterial vaginosis",
-            "Ferning",
-            "Whiff Test",
-            "Wound culture",
-            "Wet Mount"
+            "Swab"
           ],
           "numberOfVisits": 10,
           "scope": "latest",
@@ -612,12 +529,12 @@
         "isObservation": true,
         "displayOrder": 11,
         "dashboardConfig": {
-          "conceptNames": ["Fecal occult", "Stool culture","Protozoa","Helminths"],
+          "conceptNames": ["Stool"],
           "showDetailsButton": true,
           "numberOfVisits": 3
         },
         "expandedViewConfig": {
-          "conceptNames": ["Fecal occult", "Stool culture","Protozoa","Helminths"],
+          "conceptNames": ["Stool"],
           "numberOfVisits": 10,
           "scope": "latest",
           "showDetailsButton": true,
@@ -630,7 +547,7 @@
         "isObservation": true,
         "displayOrder": 11,
         "dashboardConfig": {
-          "conceptNames": ["Miscellaneous", "Other culture"],
+          "conceptNames": ["Others"],
           "showDetailsButton": true,
           "numberOfVisits": 3
         },
