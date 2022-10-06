@@ -464,52 +464,16 @@
         "displayOrder": 11,
         "dashboardConfig": {
           "conceptNames": [
-            "Rapid malaria",
-            "Rapid HIV",
-            "Fasting blood glucose",
-            "Random blood glucose",
-            "HbA1C",
-            "C-Reactive Protein",
-            "Erythrocyte Sedimentation Rate",
-            "Amylase",
-            "Lipase",
-            "Rheumatoid Factor",
-            "Antistreptolysin O",
-            "Prolactin",
-            "Sex Hormones",
-            "CBC",
-            "Lipid Profile",
-            "Coagulation Profile",
-            "Thyroid Functional Test",
-            "Renal Functional Test",
-            "Liver Functional Test"
+            "Blood"
           ],
           "showDetailsButton": true,
-          "numberOfVisits": 1
+          "numberOfVisits": 3
         },
         "expandedViewConfig": {
           "conceptNames": [
-            "Rapid malaria",
-            "Rapid HIV",
-            "Fasting blood glucose",
-            "Random blood glucose",
-            "HbA1C",
-            "C-Reactive Protein",
-            "Erythrocyte Sedimentation Rate",
-            "Amylase",
-            "Lipase",
-            "Rheumatoid Factor",
-            "Antistreptolysin O",
-            "Prolactin",
-            "Sex Hormones",
-            "CBC",
-            "Lipid Profile",
-            "Coagulation Profile",
-            "Thyroid Functional Test",
-            "Renal Functional Test",
-            "Liver Functional Test"
+            "Blood"
           ],
-          "numberOfVisits": 2,
+          "numberOfVisits": 10,
           "scope": "latest",
           "showDetailsButton": true,
           "pivotTable": {}
@@ -522,20 +486,16 @@
         "displayOrder": 11,
         "dashboardConfig": {
           "conceptNames": [
-            "Urine pregnancy test",
-            "Urine culture",
-            "Urinalysis"
+            "Urine"
           ],
           "showDetailsButton": true,
-          "numberOfVisits": 1
+          "numberOfVisits": 3
         },
         "expandedViewConfig": {
           "conceptNames": [
-            "Urine pregnancy test",
-            "Urine culture",
-            "Urinalysis"
+            "Urine"
           ],
-          "numberOfVisits": 2,
+          "numberOfVisits": 10,
           "scope": "latest",
           "showDetailsButton": true,
           "pivotTable": {}
@@ -548,28 +508,16 @@
         "displayOrder": 11,
         "dashboardConfig": {
           "conceptNames": [
-            "Chlamydia",
-            "Gonorrhea",
-            "Bacterial vaginosis",
-            "Ferning",
-            "Whiff Test",
-            "Wound culture",
-            "Wet Mount"
+            "Swab"
           ],
           "showDetailsButton": true,
-          "numberOfVisits": 1
+          "numberOfVisits": 3
         },
         "expandedViewConfig": {
           "conceptNames": [
-            "Chlamydia",
-            "Gonorrhea",
-            "Bacterial vaginosis",
-            "Ferning",
-            "Whiff Test",
-            "Wound culture",
-            "Wet Mount"
+            "Swab"
           ],
-          "numberOfVisits": 2,
+          "numberOfVisits": 10,
           "scope": "latest",
           "showDetailsButton": true,
           "pivotTable": {}
@@ -581,13 +529,13 @@
         "isObservation": true,
         "displayOrder": 11,
         "dashboardConfig": {
-          "conceptNames": ["Fecal occult", "Stool culture"],
+          "conceptNames": ["Stool"],
           "showDetailsButton": true,
-          "numberOfVisits": 1
+          "numberOfVisits": 3
         },
         "expandedViewConfig": {
-          "conceptNames": ["Fecal occult", "Stool culture"],
-          "numberOfVisits": 2,
+          "conceptNames": ["Stool"],
+          "numberOfVisits": 10,
           "scope": "latest",
           "showDetailsButton": true,
           "pivotTable": {}
@@ -599,13 +547,13 @@
         "isObservation": true,
         "displayOrder": 11,
         "dashboardConfig": {
-          "conceptNames": ["Miscellaneous", "Other culture"],
+          "conceptNames": ["Others"],
           "showDetailsButton": true,
-          "numberOfVisits": 1
+          "numberOfVisits": 3
         },
         "expandedViewConfig": {
           "conceptNames": ["Miscellaneous", "Other culture"],
-          "numberOfVisits": 2,
+          "numberOfVisits": 10,
           "scope": "latest",
           "showDetailsButton": true,
           "pivotTable": {}
@@ -619,11 +567,11 @@
         "dashboardConfig": {
           "conceptNames": ["EKG"],
           "showDetailsButton": true,
-          "numberOfVisits": 1
+          "numberOfVisits": 3
         },
         "expandedViewConfig": {
           "conceptNames": ["EKG"],
-          "numberOfVisits": 2,
+          "numberOfVisits": 10,
           "scope": "latest",
           "showDetailsButton": true,
           "pivotTable": {}
