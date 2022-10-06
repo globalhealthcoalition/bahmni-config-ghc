@@ -494,7 +494,11 @@
           "numberOfVisits": 10,
           "scope": "latest",
           "showDetailsButton": true,
-          "pivotTable": {}
+          "pivotTable": {
+          "numberOfVisits": "10",
+          "groupBy": "encounters",
+          "obsConcepts": ["Blood"]
+          }
         }
       },
       "urine": {
@@ -516,7 +520,11 @@
           "numberOfVisits": 10,
           "scope": "latest",
           "showDetailsButton": true,
-          "pivotTable": {}
+          "pivotTable": {
+          "numberOfVisits": "10",
+          "groupBy": "encounters",
+          "obsConcepts": ["Urine"]
+          }
         }
       },
       "swab": {
@@ -538,7 +546,11 @@
           "numberOfVisits": 10,
           "scope": "latest",
           "showDetailsButton": true,
-          "pivotTable": {}
+          "pivotTable": {
+          "numberOfVisits": "10",
+          "groupBy": "encounters",
+          "obsConcepts": ["Swab"]
+          }
         }
       },
       "stool": {
@@ -556,7 +568,11 @@
           "numberOfVisits": 10,
           "scope": "latest",
           "showDetailsButton": true,
-          "pivotTable": {}
+          "pivotTable": {
+          "numberOfVisits": "10",
+          "groupBy": "encounters",
+          "obsConcepts": ["Stool"]
+          }
         }
       },
       "others": {
@@ -570,11 +586,15 @@
           "numberOfVisits": 3
         },
         "expandedViewConfig": {
-          "conceptNames": ["Miscellaneous", "Other culture"],
+          "conceptNames": ["Others"],
           "numberOfVisits": 10,
           "scope": "latest",
           "showDetailsButton": true,
-          "pivotTable": {}
+          "pivotTable": {
+            "numberOfVisits": "10",
+            "groupBy": "encounters",
+            "obsConcepts": ["Others"]
+          }
         }
       },
       "cardiology": {
@@ -592,7 +612,11 @@
           "numberOfVisits": 10,
           "scope": "latest",
           "showDetailsButton": true,
-          "pivotTable": {}
+          "pivotTable": {
+            "numberOfVisits": "10",
+            "groupBy": "encounters",
+            "obsConcepts": ["EKG"]
+          }
         }
       }
     }
