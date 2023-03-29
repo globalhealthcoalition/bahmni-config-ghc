@@ -147,6 +147,18 @@
                   "Pre-operative clearance",
                   "Anthropometric Study"
                 ]
+              },
+              "Clinical Urgency": {
+                "excludeFrom": [
+                  "Primary Care",
+                  "Urgent follow up",
+                  "Physical Therapy",
+                  "Cita Abierta",
+                  "Consults",
+                  "Pre-operative clearance",
+                  "Anthropometric Study",
+                  "Need for Surgery"
+                ]
               }
             }    
           },
