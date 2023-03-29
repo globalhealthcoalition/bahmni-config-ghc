@@ -212,11 +212,11 @@
         "displayOrder": 11,
         "dashboardConfig": {
           "showDetailsButton": true,
-          "conceptNames": ["Reason for visit", "Allergies", "Smoking History"],
+          "conceptNames": ["Reason for visit", "Allergies", "Smoking History", "Random blood glucose", "Fasting blood glucose"],
           "numberOfVisits": 3
         },
         "expandedViewConfig": {
-          "conceptNames": ["Reason for visit", "Allergies", "Smoking History"],
+          "conceptNames": ["Reason for visit", "Allergies", "Smoking History", "Random blood glucose", "Fasting blood glucose"],
           "numberOfVisits": 10,
           "showDetailsButton": true,
           "pivotTable": {}
