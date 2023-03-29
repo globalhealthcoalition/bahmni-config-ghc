@@ -172,7 +172,8 @@
         "Priority 2",
         "Priority 3",
         "Consults Service",
-        "Primary Care Service"
+        "Primary Care Service",
+        "Clinical Urgency"
       ],
       "forDataAnalysis": true,
       "showAllStates": true,
@@ -387,7 +388,7 @@
     "type": "programs",
     "requiredPrivilege": "app:reports",
     "config": {
-      "programAttributes": [],
+      "programAttributes": ["Clinical Urgency"],
       "forDataAnalysis": true,
       "showAllStates": true,
       "programNamesToFilter": [
