@@ -473,7 +473,7 @@
         "showDetailsButton": true,
         "displayOrder": 10,
         "dashboardConfig": {},
-        "numberOfVisits": 10
+        "numberOfVisits": 5
       },
       "blood": {
         "translationKey": "DASHBOARD_TITLE_BLOOD_SAMPLE_KEY",
