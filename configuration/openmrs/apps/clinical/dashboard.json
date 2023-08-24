@@ -473,7 +473,7 @@
         "showDetailsButton": true,
         "displayOrder": 10,
         "dashboardConfig": {},
-        "numberOfVisits": 5
+        "numberOfVisits": 10
       },
       "blood": {
         "translationKey": "DASHBOARD_TITLE_BLOOD_SAMPLE_KEY",
@@ -516,7 +516,7 @@
             "Liver Functional Test"
           ],
           "showDetailsButton": true,
-          "numberOfVisits": 3
+          "numberOfVisits": 5
         },
         "expandedViewConfig": {
           "conceptNames": [
@@ -553,11 +553,11 @@
             "Renal Functional Test",
             "Liver Functional Test"
           ],
-          "numberOfVisits": 10,
+          "numberOfVisits": 20,
           "scope": "latest",
           "showDetailsButton": true,
           "pivotTable": {
-          "numberOfVisits": "10",
+          "numberOfVisits": "20",
           "groupBy": "encounters",
           "obsConcepts": [
             "Prostate Specific Antigen",
@@ -609,7 +609,7 @@
             "Microscopy Set"
           ],
           "showDetailsButton": true,
-          "numberOfVisits": 3
+          "numberOfVisits": 5
         },
         "expandedViewConfig": {
           "conceptNames": [
@@ -618,11 +618,11 @@
             "Urinalysis",
             "Microscopy Set"
           ],
-          "numberOfVisits": 10,
+          "numberOfVisits": 20,
           "scope": "latest",
           "showDetailsButton": true,
           "pivotTable": {
-          "numberOfVisits": "10",
+          "numberOfVisits": "20",
           "groupBy": "encounters",
           "obsConcepts": [
             "Urine pregnancy test",
@@ -650,7 +650,7 @@
             "Wet Mount"
           ],
           "showDetailsButton": true,
-          "numberOfVisits": 3
+          "numberOfVisits": 5
         },
         "expandedViewConfig": {
           "conceptNames": [
@@ -663,11 +663,11 @@
             "Wound culture",
             "Wet Mount"
           ],
-          "numberOfVisits": 10,
+          "numberOfVisits": 20,
           "scope": "latest",
           "showDetailsButton": true,
           "pivotTable": {
-          "numberOfVisits": "10",
+          "numberOfVisits": "20",
           "groupBy": "encounters",
           "obsConcepts": [
             "Chlamydia (Swab)",
@@ -695,7 +695,7 @@
             "Helminths"
           ],
           "showDetailsButton": true,
-          "numberOfVisits": 3
+          "numberOfVisits": 5
         },
         "expandedViewConfig": {
           "conceptNames": [
@@ -704,11 +704,11 @@
             "Protozoa",
             "Helminths"
           ],
-          "numberOfVisits": 10,
+          "numberOfVisits": 20,
           "scope": "latest",
           "showDetailsButton": true,
           "pivotTable": {
-          "numberOfVisits": "10",
+          "numberOfVisits": "20",
           "groupBy": "encounters",
           "obsConcepts": [
             "Fecal occult",
@@ -730,18 +730,18 @@
             "Other culture"
           ],
           "showDetailsButton": true,
-          "numberOfVisits": 3
+          "numberOfVisits": 5
         },
         "expandedViewConfig": {
           "conceptNames": [
             "Miscellaneous",
             "Other culture"
           ],
-          "numberOfVisits": 10,
+          "numberOfVisits": 20,
           "scope": "latest",
           "showDetailsButton": true,
           "pivotTable": {
-            "numberOfVisits": "10",
+            "numberOfVisits": "20",
             "groupBy": "encounters",
             "obsConcepts": [
               "Miscellaneous",
@@ -758,15 +758,15 @@
         "dashboardConfig": {
           "conceptNames": ["EKG"],
           "showDetailsButton": true,
-          "numberOfVisits": 3
+          "numberOfVisits": 5
         },
         "expandedViewConfig": {
           "conceptNames": ["EKG"],
-          "numberOfVisits": 10,
+          "numberOfVisits": 20,
           "scope": "latest",
           "showDetailsButton": true,
           "pivotTable": {
-            "numberOfVisits": "10",
+            "numberOfVisits": "20",
             "groupBy": "encounters",
             "obsConcepts": ["EKG"]
           }
